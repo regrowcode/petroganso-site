@@ -263,6 +263,22 @@ const translations = {
     'rfq_calc_auto': 'Cálculo en Tiempo Real',
     'form_btn_submit': 'Enviar Solicitud al Departamento Comercial',
 
+    // Chevron-Style Visual Spotlights & Cards
+    'badge_crude_card': 'Crudos Físicos',
+    'badge_refined_card': 'Norma ASTM',
+    'badge_bunker_card': 'Canal 24/7',
+    'spotlight_badge': 'Garantía Operacional',
+    'spotlight_title': 'Aseguramiento de Calidad y Cadena de Custodia',
+    'spotlight_sub': 'Supervisión técnica rigurosa desde la certificación en laboratorio hasta la transferencia en alta mar.',
+    'spotlight_c1_badge': 'Análisis ASTM & Saybolt',
+    'spotlight_c1_title': 'Inspección Independiente y Certificados COA',
+    'spotlight_c1_desc': 'Cada lote de crudo o derivado refinado cuenta con un Certificado de Calidad (Certificate of Analysis) emitido por firmas acreditadas (SGS, Saybolt, Intertek) antes de su transferencia o bombeo a tanques.',
+    'spotlight_c2_badge': 'Transferencias Costa Afuera',
+    'spotlight_c2_title': 'Maniobras STS y Logística en Aguas Profundas',
+    'spotlight_c2_desc': 'Facilitamos operaciones de alijo (lightering) y transferencia buque a buque en fondeaderos autorizados con defensas neumáticas Yokohama de alta absorción y mangueras con certificación de presión hidrostática.',
+    'ops_hse_float_title': 'Transferencias STS & Alijo Costa Afuera',
+    'ops_hse_float_desc': 'Maniobras con defensas neumáticas Yokohama y mangueras certificadas según guías OCIMF/ICS en radas de Panamá.',
+
     // Footer
     'footer_brand_desc': 'Empresa de comercialización y logística de hidrocarburos especializada en la compra y venta mayorista de crudos y derivados refinados en las Américas.',
     'footer_loc': 'Ciudad de Panamá, República de Panamá',
@@ -534,6 +550,22 @@ const translations = {
     'rfq_calc_title': 'Preliminary Cargo Estimation',
     'rfq_calc_auto': 'Real-time Calculation',
     'form_btn_submit': 'Submit Request to Commercial Department',
+
+    // Chevron-Style Visual Spotlights & Cards
+    'badge_crude_card': 'Physical Crudes',
+    'badge_refined_card': 'ASTM Standards',
+    'badge_bunker_card': 'Panama Canal 24/7',
+    'spotlight_badge': 'Operational Assurance',
+    'spotlight_title': 'Quality Assurance & Chain of Custody',
+    'spotlight_sub': 'Rigorous technical oversight from certified laboratory analysis to offshore transfer.',
+    'spotlight_c1_badge': 'ASTM & Saybolt Testing',
+    'spotlight_c1_title': 'Independent Inspection & COA Certificates',
+    'spotlight_c1_desc': 'Every parcel of crude or refined petroleum product carries an accredited Certificate of Analysis (COA) issued by international inspection firms (SGS, Saybolt, Intertek) prior to custody transfer or tank pumping.',
+    'spotlight_c2_badge': 'Offshore Transfers',
+    'spotlight_c2_title': 'STS Manoeuvres & Deepwater Logistics',
+    'spotlight_c2_desc': 'We facilitate lightering and ship-to-ship transfers at designated deepwater anchorages using certified Yokohama pneumatic fenders and hydrostatic pressure-tested hoses under OCIMF/ICS guidelines.',
+    'ops_hse_float_title': 'Offshore STS & Lightering Operations',
+    'ops_hse_float_desc': 'Manoeuvres conducted with Yokohama pneumatic fenders and certified hoses adhering to OCIMF/ICS guidelines in Panama roadsteads.',
 
     // Footer
     'footer_brand_desc': 'Hydrocarbon supply and commercialization firm specializing in bulk crude oil and refined petroleum products across the Americas.',
