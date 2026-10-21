@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petroganso | Comercialización de Crudo y Derivados del Petróleo • Panamá</title>
-  <meta name="description" content="Petroganso es una firma de comercio y logística de hidrocarburos con sede en Ciudad de Panamá. Compra y venta de petróleo crudo, combustibles refinados y servicios de bunkering marítimo.">
+  <meta name="description" content="Petroganso es una firma de comercialización, suministro y logística de hidrocarburos con sede en Ciudad de Panamá. Compra y venta de petróleo crudo, combustibles refinados y servicios de bunkering marítimo.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <!-- Core & Page Stylesheets -->
@@ -17,41 +17,48 @@
        HEADER & NAVIGATION
        ========================================================================= -->
   <div class="header-wrapper">
-    <!-- Live Financial / Energy Ticker Bar -->
-    <div class="ticker-bar" aria-label="Indicadores de Mercado Energético">
-      <div class="container ticker-wrap">
-        <div class="ticker-label">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
-          MERCADOS EN VIVO
+    <!-- Top International Benchmarks Bar -->
+    <div class="ticker-bar" aria-label="Indicadores de Mercado Internacional">
+      <div class="ticker-wrap">
+        <div class="ticker-label-box">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span data-i18n="ticker_label">MERCADOS INTERNACIONALES</span>
         </div>
-        <div class="ticker-scroll">
-          <!-- Dynamic JavaScript ticker items -->
+        <div class="ticker-viewport">
+          <div class="ticker-scroll"></div>
         </div>
       </div>
     </div>
 
     <!-- Main Navigation Bar -->
-    <header class="navbar container">
+    <header class="navbar">
       <a href="index.html" class="brand-logo" aria-label="Petroganso Inicio">
-        <img src="assets/images/logo.svg" alt="Petroganso Energy & Commodities" width="220" height="42">
+        <img src="assets/images/logo.svg" alt="Petroganso Energy & Commodities" width="200" height="40">
       </a>
 
       <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
-        <a href="index.html" class="nav-link active">Inicio</a>
-        <a href="nosotros.html" class="nav-link">Quiénes Somos</a>
-        <a href="productos.html" class="nav-link">Productos &amp; Crudos</a>
-        <a href="operaciones.html" class="nav-link">Operaciones &amp; Logística</a>
-        <a href="cumplimiento.html" class="nav-link">Cumplimiento &amp; ESG</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="index.html" class="nav-link active" data-i18n="nav_home">Inicio</a>
+        <a href="nosotros.html" class="nav-link" data-i18n="nav_about">Quiénes Somos</a>
+        <a href="productos.html" class="nav-link" data-i18n="nav_products">Productos &amp; Crudos</a>
+        <a href="operaciones.html" class="nav-link" data-i18n="nav_operations">Operaciones &amp; Logística</a>
+        <a href="cumplimiento.html" class="nav-link" data-i18n="nav_compliance">Cumplimiento &amp; ESG</a>
+        <a href="contacto.html" class="nav-link" data-i18n="nav_contact">Contacto</a>
         <div class="mobile-cta" style="display:none;">
-          <a href="contacto.html" class="btn btn-primary" style="width:100%;">Mesa de Trading / RFQ</a>
+          <a href="contacto.html" class="btn btn-primary" style="width:100%;" data-i18n="nav_cta">Solicitar Suministro</a>
         </div>
       </nav>
 
       <div class="nav-actions">
+        <!-- Language Switcher Pill -->
+        <div class="lang-switcher" aria-label="Selector de Idioma">
+          <button type="button" class="lang-btn active" data-lang="es">ES</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+
         <a href="contacto.html" class="btn btn-primary" id="btnHeaderRfq">
-          <span>Mesa de Trading / RFQ</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          <span data-i18n="nav_cta">Solicitar Suministro</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
         </a>
       </div>
 
@@ -71,48 +78,49 @@
 
     <div class="container hero-content">
       <div class="hero-badge-wrap">
-        <span class="badge badge-gold">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-          Hub Energético Global • Panamá
+        <span class="badge badge-gold" data-i18n="badge_hub_panama">
+          Hub Energético Internacional • Panamá
         </span>
-        <span class="badge badge-blue">Incoterms 2020: FOB • CIF • CFR</span>
+        <span class="badge badge-blue" data-i18n="badge_incoterms">Incoterms 2020: FOB • CIF • CFR</span>
       </div>
 
       <h1 class="hero-title">
-        Comercio Internacional de <span class="text-gold">Petróleo Crudo</span> y Refinados
+        <span data-i18n="hero_title_1">Comercialización y Suministro de</span>
+        <span class="text-gold" data-i18n="hero_title_gold">Petróleo Crudo</span>
+        <span data-i18n="hero_title_2">y Derivados Refinados</span>
       </h1>
 
-      <p class="hero-lead">
-        Conectamos los principales centros de refinación, almacenamiento y rutas marítimas del mundo desde el istmo de Panamá. Excelencia operativa, solvencia y rigurosos estándares de inspección independiente.
+      <p class="hero-lead" data-i18n="hero_lead">
+        Conectamos refinerías, comercializadoras mayoristas y flotas marítimas en las Américas y rutas globales desde la posición estratégica de Panamá. Excelencia operativa, solvencia y aseguramiento de calidad Saybolt y SGS.
       </p>
 
       <div class="hero-cta-group">
         <a href="productos.html" class="btn btn-primary btn-lg" id="btnExploreProducts">
-          <span>Ver Portafolio de Crudos &amp; Refinados</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <span data-i18n="hero_btn_products">Ver Portafolio de Productos</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
         <a href="contacto.html" class="btn btn-outline btn-lg" id="btnOpenRfq">
-          <span>Solicitar Cotización (RFQ)</span>
+          <span data-i18n="hero_btn_rfq">Solicitar Cotización de Suministro</span>
         </a>
       </div>
 
       <!-- Institutional Metrics -->
       <div class="hero-stats">
         <div class="stat-item">
-          <div class="stat-number">ASTM <span class="accent">&amp;</span> ISO</div>
-          <div class="stat-label">Certificación de Calidad</div>
+          <div class="stat-number" data-i18n="stat_1_val">ASTM &amp; ISO</div>
+          <div class="stat-label" data-i18n="stat_1_lbl">Estándares de Calidad</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">100<span class="accent">%</span></div>
-          <div class="stat-label">Inspección Saybolt / SGS</div>
+          <div class="stat-number" data-i18n="stat_2_val">100%</div>
+          <div class="stat-label" data-i18n="stat_2_lbl">Inspección Saybolt / SGS</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">2 <span class="accent">Océanos</span></div>
-          <div class="stat-label">Conexión Atlántico - Pacífico</div>
+          <div class="stat-number" data-i18n="stat_3_val">2 Océanos</div>
+          <div class="stat-label" data-i18n="stat_3_lbl">Conexión Atlántico - Pacífico</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">24<span class="accent">/7</span></div>
-          <div class="stat-label">Mesa de Trading Activa</div>
+          <div class="stat-number" data-i18n="stat_4_val">FOB / CIF</div>
+          <div class="stat-label" data-i18n="stat_4_lbl">Modalidades de Entrega</div>
         </div>
       </div>
     </div>
@@ -125,66 +133,66 @@
     <div class="notice-box" role="status">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
       <div>
-        <p><strong>Transparencia y Constitución Corporativa:</strong> Petroganso se encuentra formalizando su proceso final de registro y personería jurídica mercantil ante las autoridades de la República de Panamá. Todas las operaciones y procedimientos se rigen bajo los más estrictos marcos internacionales de cumplimiento KYC/AML y normativas del comercio marítimo internacional.</p>
+        <p><strong data-i18n="notice_title">Transparencia y Constitución Corporativa:</strong> <span data-i18n="notice_text">Petroganso se encuentra en fase final de protocolización societaria y personería jurídica mercantil ante las autoridades de la República de Panamá. Las operaciones comerciales se planifican bajo los más rigurosos marcos de debida diligencia KYC/AML y normativas del comercio marítimo internacional.</span></p>
       </div>
     </div>
   </div>
 
   <!-- =========================================================================
-       CORE TRADING PILLARS
+       CORE COMMERCIAL PILLARS
        ========================================================================= -->
   <section class="section section-darker" id="pilares">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-gold">Líneas de Negocio</span>
-        <h2>Soluciones Integrales en la Cadena de Hidrocarburos</h2>
-        <p>Desde el suministro de crudos pesados y ligeros para refinerías, hasta el abastecimiento de combustibles marinos de alta especificación en las entradas del Canal de Panamá.</p>
+        <span class="badge badge-gold" data-i18n="sec_lines_badge">Líneas de Comercialización</span>
+        <h2 data-i18n="sec_lines_title">Soluciones Integrales en Suministro de Hidrocarburos</h2>
+        <p data-i18n="sec_lines_sub">Compra y venta física de crudos pesados y livianos, combustibles limpios y suministro marino en ambos lados del Canal de Panamá.</p>
       </div>
 
       <div class="grid-3">
         <!-- Card 1 -->
         <div class="glass-card">
-          <div class="product-icon-wrap gold" style="margin-bottom:1.5rem;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+          <div class="product-icon-wrap gold" style="margin-bottom:1.3rem;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
           </div>
-          <h3>Petróleo Crudo</h3>
-          <p>Comercialización de crudos livianos (Light Sweet) y pesados (Heavy Sour) adaptados a la dieta de refinerías en América del Norte, Golfo de México, Caribe y Asia-Pacífico.</p>
-          <ul style="margin: 1.2rem 0; font-size:0.9rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.5rem;">
-            <li>✓ Grados API 18° a 44°</li>
-            <li>✓ Contenido de Azufre bajo y medio</li>
-            <li>✓ Fletamento Panamax, Aframax &amp; VLCC</li>
+          <h3 data-i18n="card_crude_title">Petróleo Crudo</h3>
+          <p data-i18n="card_crude_desc">Comercialización de crudos livianos (Light Sweet) y pesados (Heavy Sour) adaptados a la dieta de procesamiento de refinerías en el continente americano y mercados internacionales.</p>
+          <ul style="margin: 1.1rem 0; font-size:0.88rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.45rem;">
+            <li data-i18n="card_crude_feat1">✓ Grados API de 18° a 44°</li>
+            <li data-i18n="card_crude_feat2">✓ Contenido de azufre dulce y agrio</li>
+            <li data-i18n="card_crude_feat3">✓ Fletamentos Panamax, Aframax y VLCC</li>
           </ul>
-          <a href="productos.html#crudo" class="btn btn-secondary btn-sm" style="margin-top:0.8rem;">Ver Grados de Crudo →</a>
+          <a href="productos.html#crudo" class="btn btn-secondary btn-sm" style="margin-top:0.6rem;" data-i18n="card_crude_link">Ver Grados de Crudo →</a>
         </div>
 
         <!-- Card 2 -->
         <div class="glass-card">
-          <div class="product-icon-wrap" style="margin-bottom:1.5rem;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          <div class="product-icon-wrap" style="margin-bottom:1.3rem;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
           </div>
-          <h3>Refinados y Destilados</h3>
-          <p>Suministro confiable de Diesel ULSD 10ppm / 50ppm, Gasolinas de alto octanaje, Turbosina Jet Fuel A-1 y Fuel Oil con especificaciones internacionales garantizadas.</p>
-          <ul style="margin: 1.2rem 0; font-size:0.9rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.5rem;">
-            <li>✓ Diesel Ultra Bajo en Azufre (ULSD)</li>
-            <li>✓ Jet Fuel A-1 bajo norma ASTM D1655</li>
-            <li>✓ Nafta pesada y petroquímicos</li>
+          <h3 data-i18n="card_refined_title">Refinados y Destilados</h3>
+          <p data-i18n="card_refined_desc">Distribución mayorista de Diesel ULSD 10ppm / 50ppm, Gasolinas de motor, Turbosina Jet A-1 y Fuel Oil con especificaciones técnicas certificadas.</p>
+          <ul style="margin: 1.1rem 0; font-size:0.88rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.45rem;">
+            <li data-i18n="card_refined_feat1">✓ Diesel Ultra Bajo en Azufre (ULSD)</li>
+            <li data-i18n="card_refined_feat2">✓ Jet Fuel A-1 bajo norma ASTM D1655</li>
+            <li data-i18n="card_refined_feat3">✓ Naftas vírgenes y petroquímicos</li>
           </ul>
-          <a href="productos.html#refinados" class="btn btn-secondary btn-sm" style="margin-top:0.8rem;">Ver Refinados →</a>
+          <a href="productos.html#refinados" class="btn btn-secondary btn-sm" style="margin-top:0.6rem;" data-i18n="card_refined_link">Ver Refinados →</a>
         </div>
 
         <!-- Card 3 -->
         <div class="glass-card">
-          <div class="product-icon-wrap gold" style="margin-bottom:1.5rem;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"></path><path d="M4 18l2-9h12l2 9"></path><path d="M12 4v5"></path></svg>
+          <div class="product-icon-wrap gold" style="margin-bottom:1.3rem;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"></path><path d="M4 18l2-9h12l2 9"></path><path d="M12 4v5"></path></svg>
           </div>
-          <h3>Bunkering en Panamá</h3>
-          <p>Abastecimiento marino de VLSFO 0.5% e ISO 8217 MGO 0.1% a buques en fondeo y tránsito por los sectores de Balboa (Pacífico) y Cristóbal (Atlántico).</p>
-          <ul style="margin: 1.2rem 0; font-size:0.9rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.5rem;">
-            <li>✓ Cumplimiento OMI 2020 (S &lt; 0.5%)</li>
-            <li>✓ Barcazas de entrega con medidores Coriolis</li>
-            <li>✓ Disponibilidad 24/7 en radas oficiales</li>
+          <h3 data-i18n="card_bunker_title">Combustibles Marinos (Bunkering)</h3>
+          <p data-i18n="card_bunker_desc">Abastecimiento marítimo de VLSFO 0.5% e ISO 8217 MGO 0.1% a buques comerciales en fondeaderos oficiales del Canal de Panamá (Balboa y Cristóbal).</p>
+          <ul style="margin: 1.1rem 0; font-size:0.88rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.45rem;">
+            <li data-i18n="card_bunker_feat1">✓ Cumplimiento estricto OMI 2020</li>
+            <li data-i18n="card_bunker_feat2">✓ Barcazas con medidores de flujo Coriolis</li>
+            <li data-i18n="card_bunker_feat3">✓ Servicio 24/7 en radas oficiales</li>
           </ul>
-          <a href="productos.html#bunkering" class="btn btn-secondary btn-sm" style="margin-top:0.8rem;">Ver Bunkering →</a>
+          <a href="productos.html#bunkering" class="btn btn-secondary btn-sm" style="margin-top:0.6rem;" data-i18n="card_bunker_link">Ver Bunkering →</a>
         </div>
       </div>
     </div>
@@ -195,12 +203,12 @@
        ========================================================================= -->
   <section class="section" id="hub-panama">
     <div class="container">
-      <div class="grid-2" style="align-items:center; gap:3.5rem;">
+      <div class="grid-2" style="align-items:center; gap:3rem;">
         <div>
-          <span class="badge badge-blue">Posición Geopolítica</span>
-          <h2 style="margin: 1rem 0 1.2rem 0;">Panamá: El Centro Neurálgico del Comercio Energético</h2>
-          <p class="lead">
-            Ubicados estratégicamente en la bifurcación logística que une los mercados del Atlántico y del Pacífico, permitiendo una rápida respuesta a las dinámicas de arbitraje internacional.
+          <span class="badge badge-blue" data-i18n="hub_badge">Ventaja Geoestratégica</span>
+          <h2 style="margin: 0.9rem 0 1.1rem 0;" data-i18n="hub_title">Panamá: Centro Logístico de las Américas</h2>
+          <p class="lead" data-i18n="hub_lead">
+            Ubicados en la encrucijada marítima que une el Atlántico y el Pacífico, facilitamos el flujo seguro de energéticos mediante infraestructura de vanguardia.
           </p>
 
           <div class="hub-points">
@@ -209,8 +217,8 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
               </div>
               <div class="hub-point-text">
-                <h4>Conectividad Bimodal y Canal de Panamá</h4>
-                <p>Facilitamos operaciones de transbordo, alijo (lightering) y aprovisionamiento marítimo en ambas bocas interoceánicas del Canal.</p>
+                <h4 data-i18n="hub_point1_title">Conexión Bimodal y Canal de Panamá</h4>
+                <p data-i18n="hub_point1_desc">Gestión ágil para transferencias, alijo (lightering) y suministro de combustible en ambas bocas del Canal.</p>
               </div>
             </div>
 
@@ -219,8 +227,8 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
               </div>
               <div class="hub-point-text">
-                <h4>Almacenamiento y Terminales Estratégicas</h4>
-                <p>Acceso a tanques de almacenamiento e infraestructura de tuberías en las costas panameñas para blending y optimización de cargamentos.</p>
+                <h4 data-i18n="hub_point2_title">Infraestructura Portuaria y Almacenamiento</h4>
+                <p data-i18n="hub_point2_desc">Coordinación en terminales de transbordo en el Caribe y Pacífico para recepción y optimización de lotes.</p>
               </div>
             </div>
 
@@ -229,14 +237,14 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
               </div>
               <div class="hub-point-text">
-                <h4>Seguridad Jurídica y Financiera</h4>
-                <p>Jurisdicción con economía dolarizada, banca internacional robusta y legislación mercantil idónea para transacciones transfronterizas.</p>
+                <h4 data-i18n="hub_point3_title">Seguridad Jurídica y Financiera</h4>
+                <p data-i18n="hub_point3_desc">Economía dolarizada, banca internacional robusta y legislación mercantil idónea para transacciones transfronterizas.</p>
               </div>
             </div>
           </div>
 
-          <div style="margin-top: 2.2rem;">
-            <a href="operaciones.html" class="btn btn-primary">Conocer Nuestra Red Logística</a>
+          <div style="margin-top: 2rem;">
+            <a href="operaciones.html" class="btn btn-primary" data-i18n="hub_btn">Conocer Operaciones Marítimas</a>
           </div>
         </div>
 
@@ -246,10 +254,10 @@
           <div class="hub-badge-float">
             <div style="display:flex; justify-content:space-between; align-items:center;">
               <div>
-                <strong style="color:#FFFFFF; font-size:1.05rem; display:block;">Terminal &amp; Tank Farm Network</strong>
-                <span style="font-size:0.85rem; color:var(--text-muted);">Bahía Las Minas / Balboa Anchorage</span>
+                <strong style="color:#FFFFFF; font-size:1rem; display:block;">Terminal &amp; Tank Farm Network</strong>
+                <span style="font-size:0.82rem; color:var(--text-muted);" data-i18n="hub_card_tag">Bahía Las Minas / Balboa Anchorage</span>
               </div>
-              <span class="badge badge-emerald">Operativo 24/7</span>
+              <span class="badge badge-emerald">24/7 Logistics</span>
             </div>
           </div>
         </div>
@@ -260,17 +268,17 @@
   <!-- =========================================================================
        QUALITY & INSPECTION STANDARDS STRIP
        ========================================================================= -->
-  <section class="section-darker" style="padding: 3rem 0;">
+  <section class="section-darker" style="padding: 2.8rem 0;">
     <div class="container" style="text-align:center;">
-      <span style="font-size:0.82rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); font-weight:700; display:block; margin-bottom:1.5rem;">
+      <span style="font-size:0.78rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); font-weight:700; display:block; margin-bottom:1.2rem;" data-i18n="inspection_label">
         ESTÁNDARES DE INSPECCIÓN INDEPENDIENTE Y ASEGURAMIENTO DE CALIDAD
       </span>
-      <div style="display:flex; align-items:center; justify-content:center; gap:3.5rem; flex-wrap:wrap; opacity:0.85;">
-        <span style="font-family:var(--font-heading); font-size:1.3rem; font-weight:800; color:#E2E8F0; letter-spacing:0.05em;">SGS INSPECTION</span>
-        <span style="font-family:var(--font-heading); font-size:1.3rem; font-weight:800; color:#E2E8F0; letter-spacing:0.05em;">SAYBOLT / CORE LAB</span>
-        <span style="font-family:var(--font-heading); font-size:1.3rem; font-weight:800; color:#E2E8F0; letter-spacing:0.05em;">INTERTEK CALEB BRETT</span>
-        <span style="font-family:var(--font-heading); font-size:1.3rem; font-weight:800; color:#E2E8F0; letter-spacing:0.05em;">ASTM INTERNATIONAL</span>
-        <span style="font-family:var(--font-heading); font-size:1.3rem; font-weight:800; color:#E2E8F0; letter-spacing:0.05em;">ISO 8217:2024</span>
+      <div style="display:flex; align-items:center; justify-content:center; gap:3rem; flex-wrap:wrap; opacity:0.85;">
+        <span style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:#E2E8F0; letter-spacing:0.05em;">SGS INSPECTION</span>
+        <span style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:#E2E8F0; letter-spacing:0.05em;">SAYBOLT / CORE LAB</span>
+        <span style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:#E2E8F0; letter-spacing:0.05em;">INTERTEK CALEB BRETT</span>
+        <span style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:#E2E8F0; letter-spacing:0.05em;">ASTM INTERNATIONAL</span>
+        <span style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:#E2E8F0; letter-spacing:0.05em;">ISO 8217:2024</span>
       </div>
     </div>
   </section>
@@ -278,22 +286,22 @@
   <!-- =========================================================================
        CALL TO ACTION BANNER
        ========================================================================= -->
-  <section class="section" style="background: radial-gradient(circle at 50% 50%, rgba(22, 44, 70, 0.45) 0%, rgba(5, 11, 20, 0.95) 100%);">
+  <section class="section" style="background: radial-gradient(circle at 50% 50%, rgba(20, 39, 66, 0.45) 0%, rgba(5, 11, 20, 0.98) 100%);">
     <div class="container">
-      <div class="glass-card" style="padding: 4rem 3rem; text-align:center; max-width:960px; margin:0 auto; border-color:var(--border-gold);">
-        <span class="badge badge-gold" style="margin-bottom:1.2rem;">Mesa Comercial</span>
-        <h2 style="font-size: clamp(2rem, 3.5vw, 2.8rem); margin-bottom: 1.2rem;">
-          ¿Requiere una Oferta Formal o Suministro Programado?
+      <div class="glass-card" style="padding: 3.5rem 2.5rem; text-align:center; max-width:920px; margin:0 auto; border-color:var(--border-gold);">
+        <span class="badge badge-gold" style="margin-bottom:1rem;" data-i18n="cta_badge">Departamento Comercial</span>
+        <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.5rem); margin-bottom: 1rem;" data-i18n="cta_title">
+          ¿Requiere una Oferta Formal de Suministro?
         </h2>
-        <p style="font-size: 1.15rem; max-width: 680px; margin: 0 auto 2.5rem auto;">
-          Nuestros traders evalúan volúmenes a partir de 50,000 barriles o 10,000 toneladas métricas bajo términos FOB o CIF en puertos designados.
+        <p style="font-size: 1.05rem; max-width: 660px; margin: 0 auto 2.2rem auto;" data-i18n="cta_desc">
+          Evaluamos requerimientos de suministro de crudos o derivados para refinerías, distribuidores mayoristas y armadores bajo términos FOB o CIF.
         </p>
-        <div style="display:flex; justify-content:center; gap:1.2rem; flex-wrap:wrap;">
+        <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
           <a href="contacto.html" class="btn btn-primary btn-lg" id="btnCtaBottom">
-            <span>Iniciar Solicitud de Cotización (RFQ)</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            <span data-i18n="cta_btn_primary">Iniciar Solicitud de Cotización (RFQ)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </a>
-          <a href="cumplimiento.html" class="btn btn-secondary btn-lg">Protocolo KYC y Cumplimiento</a>
+          <a href="cumplimiento.html" class="btn btn-secondary btn-lg" data-i18n="cta_btn_secondary">Protocolo de Cumplimiento KYC</a>
         </div>
       </div>
     </div>
@@ -306,67 +314,67 @@
     <div class="container footer-top">
       <div class="footer-brand">
         <a href="index.html">
-          <img src="assets/images/logo.svg" alt="Petroganso Logo" width="220" height="42">
+          <img src="assets/images/logo.svg" alt="Petroganso Logo" width="200" height="40">
         </a>
-        <p>
-          Firma de trading y logística de hidrocarburos especializada en la compraventa de crudos y derivados refinados en las Américas y rutas marítimas globales.
+        <p data-i18n="footer_brand_desc">
+          Empresa de comercialización y logística de hidrocarburos especializada en la compra y venta mayorista de crudos y derivados refinados en las Américas.
         </p>
         <div class="footer-location-tag">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          <span>Ciudad de Panamá, República de Panamá</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span data-i18n="footer_loc">Ciudad de Panamá, República de Panamá</span>
         </div>
       </div>
 
       <div>
-        <h4 class="footer-title">Navegación</h4>
+        <h4 class="footer-title" data-i18n="footer_col_nav">Navegación</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Quiénes Somos</a></li>
-          <li><a href="productos.html">Productos &amp; Crudos</a></li>
-          <li><a href="operaciones.html">Operaciones &amp; Logística</a></li>
-          <li><a href="cumplimiento.html">Cumplimiento KYC / AML</a></li>
-          <li><a href="contacto.html">Mesa de Trading / RFQ</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+          <li><a href="nosotros.html" data-i18n="nav_about">Quiénes Somos</a></li>
+          <li><a href="productos.html" data-i18n="nav_products">Productos &amp; Crudos</a></li>
+          <li><a href="operaciones.html" data-i18n="nav_operations">Operaciones &amp; Logística</a></li>
+          <li><a href="cumplimiento.html" data-i18n="nav_compliance">Cumplimiento KYC / AML</a></li>
+          <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="footer-title">Materias Primas</h4>
+        <h4 class="footer-title" data-i18n="footer_col_prod">Productos Principales</h4>
         <ul class="footer-links">
-          <li><a href="productos.html#crudo">Petróleo Crudo Ligero</a></li>
-          <li><a href="productos.html#crudo">Petróleo Crudo Pesado</a></li>
-          <li><a href="productos.html#refinados">Diesel ULSD 10ppm</a></li>
-          <li><a href="productos.html#refinados">Jet Fuel A-1</a></li>
-          <li><a href="productos.html#bunkering">VLSFO 0.5% Marino</a></li>
-          <li><a href="productos.html#bunkering">Marine Gas Oil (MGO)</a></li>
+          <li><a href="productos.html#crudo" data-i18n="card_crude_title">Petróleo Crudo</a></li>
+          <li><a href="productos.html#refinados" data-i18n="card_refined_title">Diesel ULSD &amp; Refinados</a></li>
+          <li><a href="productos.html#bunkering" data-i18n="card_bunker_title">Bunkering Marino</a></li>
+          <li><a href="productos.html#jet" data-i18n="prod_jet_title">Turbosina Jet A-1</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="footer-title">Marco de Cumplimiento</h4>
+        <h4 class="footer-title" data-i18n="footer_col_comp">Marco Regulatorio</h4>
         <div class="footer-compliance-box">
-          <strong>Aviso Regulatorio:</strong>
-          Petroganso no sostiene relaciones comerciales con entidades, buques o jurisdicciones sancionadas por OFAC, Naciones Unidas o la Unión Europea. Toda contraparte debe superar el proceso de debida diligencia KYC/AML previo a la emisión de ofertas vinculantes.
+          <strong data-i18n="notice_title">Aviso de Cumplimiento:</strong>
+          <span data-i18n="footer_comp_text">Petroganso no efectúa operaciones con personas, entidades o buques sancionados por OFAC, la ONU o la UE. Toda relación comercial está sujeta al procedimiento previo de debida diligencia KYC/AML.</span>
         </div>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <div>
+      <div data-i18n="footer_copy">
         &copy; 2026 Petroganso Energy &amp; Commodities. Todos los derechos reservados.
       </div>
       <div class="footer-bottom-links">
-        <a href="cumplimiento.html#terminos">Términos Comerciales</a>
-        <a href="cumplimiento.html#privacidad">Política de Privacidad</a>
-        <a href="cumplimiento.html#kyc">Guía KYC</a>
+        <a href="cumplimiento.html#terminos" data-i18n="footer_terms">Términos Comerciales</a>
+        <a href="cumplimiento.html#privacidad" data-i18n="footer_privacy">Política de Privacidad</a>
+        <a href="cumplimiento.html#kyc" data-i18n="footer_kyc">Guía KYC</a>
       </div>
       <div class="cloudflare-badge">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
-        <span>Asegurado vía Cloudflare DNS &amp; SSL</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        <span data-i18n="footer_cloudflare">Asegurado vía Cloudflare DNS &amp; SSL</span>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -16,33 +16,42 @@
        HEADER & NAVIGATION
        ========================================================================= -->
   <div class="header-wrapper">
-    <div class="ticker-bar" aria-label="Indicadores de Mercado Energético">
-      <div class="container ticker-wrap">
-        <div class="ticker-label">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
-          MERCADOS EN VIVO
+    <div class="ticker-bar" aria-label="Indicadores de Mercado Internacional">
+      <div class="ticker-wrap">
+        <div class="ticker-label-box">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span data-i18n="ticker_label">MERCADOS INTERNACIONALES</span>
         </div>
-        <div class="ticker-scroll"></div>
+        <div class="ticker-viewport">
+          <div class="ticker-scroll"></div>
+        </div>
       </div>
     </div>
 
-    <header class="navbar container">
+    <header class="navbar">
       <a href="index.html" class="brand-logo" aria-label="Petroganso Inicio">
-        <img src="assets/images/logo.svg" alt="Petroganso Energy & Commodities" width="220" height="42">
+        <img src="assets/images/logo.svg" alt="Petroganso Energy & Commodities" width="200" height="40">
       </a>
 
       <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link">Inicio</a>
-        <a href="nosotros.html" class="nav-link">Quiénes Somos</a>
-        <a href="productos.html" class="nav-link active">Productos &amp; Crudos</a>
-        <a href="operaciones.html" class="nav-link">Operaciones &amp; Logística</a>
-        <a href="cumplimiento.html" class="nav-link">Cumplimiento &amp; ESG</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Inicio</a>
+        <a href="nosotros.html" class="nav-link" data-i18n="nav_about">Quiénes Somos</a>
+        <a href="productos.html" class="nav-link active" data-i18n="nav_products">Productos &amp; Crudos</a>
+        <a href="operaciones.html" class="nav-link" data-i18n="nav_operations">Operaciones &amp; Logística</a>
+        <a href="cumplimiento.html" class="nav-link" data-i18n="nav_compliance">Cumplimiento &amp; ESG</a>
+        <a href="contacto.html" class="nav-link" data-i18n="nav_contact">Contacto</a>
       </nav>
 
       <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Selector de Idioma">
+          <button type="button" class="lang-btn active" data-lang="es">ES</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+
         <a href="contacto.html" class="btn btn-primary">
-          <span>Mesa de Trading / RFQ</span>
+          <span data-i18n="nav_cta">Solicitar Suministro</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
         </a>
       </div>
 
@@ -58,14 +67,14 @@
   <section class="inner-hero">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html">Inicio</a>
+        <a href="index.html" data-i18n="nav_home">Inicio</a>
         <span class="sep">/</span>
-        <span class="current">Productos &amp; Crudos</span>
+        <span class="current" data-i18n="nav_products">Productos &amp; Crudos</span>
       </div>
-      <span class="badge badge-gold">Commodities Físicos</span>
-      <h1 style="margin: 0.8rem 0 1rem 0;">Catálogo de Crudos y Derivados Refinados</h1>
-      <p class="lead" style="max-width: 740px;">
-        Suministro estructurado bajo contratos spot y a largo plazo (term contracts). Especificaciones técnicas sujetas a verificación independiente por laboratorios Saybolt, SGS o Intertek.
+      <span class="badge badge-gold" data-i18n="badge_commodities">Hidrocarburos Físicos</span>
+      <h1 style="margin: 0.6rem 0 0.8rem 0;" data-i18n="prod_h1">Catálogo de Crudos y Derivados Refinados</h1>
+      <p class="lead" style="max-width: 740px;" data-i18n="prod_lead">
+        Suministro estructurado bajo contratos spot y contratos de entrega programada. Especificaciones garantizadas con análisis de laboratorio Saybolt, SGS o Intertek.
       </p>
     </div>
   </section>
@@ -73,15 +82,15 @@
   <!-- =========================================================================
        PRODUCT FILTER TABS & CARDS
        ========================================================================= -->
-  <section class="section" style="padding-top:3.5rem;">
+  <section class="section" style="padding-top:2.8rem;">
     <div class="container">
       <!-- Filter Tabs -->
       <div class="product-tabs" role="tablist">
-        <button class="tab-btn active" data-category="all" role="tab" id="tabAll">Todos los Productos</button>
-        <button class="tab-btn" data-category="crudo" role="tab" id="tabCrudo">Petróleo Crudo</button>
-        <button class="tab-btn" data-category="refinados" role="tab" id="tabRefinados">Destilados &amp; Refinados</button>
-        <button class="tab-btn" data-category="bunkering" role="tab" id="tabBunkering">Bunkering Marino</button>
-        <button class="tab-btn" data-category="petroquimicos" role="tab" id="tabPetroquimicos">Naftas &amp; Especiales</button>
+        <button class="tab-btn active" data-category="all" role="tab" id="tabAll" data-i18n="tab_all">Todos los Productos</button>
+        <button class="tab-btn" data-category="crudo" role="tab" id="tabCrudo" data-i18n="tab_crude">Petróleo Crudo</button>
+        <button class="tab-btn" data-category="refinados" role="tab" id="tabRefinados" data-i18n="tab_refined">Destilados &amp; Refinados</button>
+        <button class="tab-btn" data-category="bunkering" role="tab" id="tabBunkering" data-i18n="tab_bunker">Combustibles Marinos</button>
+        <button class="tab-btn" data-category="petroquimicos" role="tab" id="tabPetroquimicos" data-i18n="tab_special">Naftas &amp; Petroquímicos</button>
       </div>
 
       <!-- Products Grid -->
@@ -91,13 +100,13 @@
         <div class="glass-card product-card product-card-item" data-category="crudo" id="crudo">
           <div class="product-card-header">
             <div class="product-icon-wrap gold">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
             </div>
-            <span class="badge badge-gold">Crudo Liviano</span>
+            <span class="badge badge-gold">API 38° – 42°</span>
           </div>
-          <h3>Light Sweet Crude Oil</h3>
-          <p class="product-desc">
-            Crudo de alta gravedad API y bajo tenor de azufre, idóneo para refinerías que buscan maximizar el rendimiento de gasolina de alto octanaje y destilados medios de bajo azufre.
+          <h3 data-i18n="prod_light_title">Petróleo Crudo Ligero Dulce (Light Sweet)</h3>
+          <p class="product-desc" data-i18n="prod_light_desc">
+            Crudo de alta gravedad API y mínimo contenido de azufre, ideal para refinerías que buscan maximizar el rendimiento de gasolinas y diesel de alta especificación.
           </p>
           <table class="spec-table">
             <tr><td class="spec-name">Gravedad API</td><td class="spec-val">38.0° – 42.5°</td></tr>
@@ -110,7 +119,7 @@
             <span class="incoterm-tag">FOB</span>
             <span class="incoterm-tag">CIF</span>
             <span class="incoterm-tag">TTT</span>
-            <span class="incoterm-tag">Parciales Aframax / VLCC</span>
+            <span class="incoterm-tag">Aframax / VLCC</span>
           </div>
         </div>
 
@@ -118,13 +127,13 @@
         <div class="glass-card product-card product-card-item" data-category="crudo">
           <div class="product-card-header">
             <div class="product-icon-wrap gold">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
             </div>
-            <span class="badge badge-gold">Crudo Pesado</span>
+            <span class="badge badge-gold">API 20° – 24°</span>
           </div>
-          <h3>Heavy Sour Crude Oil</h3>
-          <p class="product-desc">
-            Crudo pesado con alto rendimiento de fuel oil y componentes para unidades de coquizador retardado (delayed coker) y craqueo catalítico en refinerías de alta conversión.
+          <h3 data-i18n="prod_heavy_title">Petróleo Crudo Pesado Agrio (Heavy Sour)</h3>
+          <p class="product-desc" data-i18n="prod_heavy_desc">
+            Crudo con óptimo rendimiento para plantas de coquización y unidades de craqueo catalítico en refinerías de alta conversión.
           </p>
           <table class="spec-table">
             <tr><td class="spec-name">Gravedad API</td><td class="spec-val">20.5° – 24.0°</td></tr>
@@ -145,13 +154,13 @@
         <div class="glass-card product-card product-card-item" data-category="refinados" id="refinados">
           <div class="product-card-header">
             <div class="product-icon-wrap">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
             </div>
-            <span class="badge badge-blue">Destilados Medios</span>
+            <span class="badge badge-blue">EN 590</span>
           </div>
-          <h3>Diesel ULSD 10 ppm (EN 590)</h3>
-          <p class="product-desc">
-            Combustible de máxima pureza para motores de transporte automotor e industrial. Cumple con las especificaciones europeas EN 590 y estadounidenses ASTM D975 Grade 2-D S15.
+          <h3 data-i18n="prod_diesel_title">Diesel ULSD 10 ppm (EN 590 / ASTM D975)</h3>
+          <p class="product-desc" data-i18n="prod_diesel_desc">
+            Combustible diesel automotriz e industrial de máxima pureza y ultrabajo azufre para transporte y generación de energía.
           </p>
           <table class="spec-table">
             <tr><td class="spec-name">Azufre Máximo</td><td class="spec-val">&le; 10 mg/kg (ppm)</td></tr>
@@ -168,16 +177,16 @@
         </div>
 
         <!-- 4. Jet Fuel A-1 -->
-        <div class="glass-card product-card product-card-item" data-category="refinados">
+        <div class="glass-card product-card product-card-item" data-category="refinados" id="jet">
           <div class="product-card-header">
             <div class="product-icon-wrap">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"></path></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"></path></svg>
             </div>
-            <span class="badge badge-blue">Aviación Comercial</span>
+            <span class="badge badge-blue">ASTM D1655</span>
           </div>
-          <h3>Aviation Kerosene Jet A-1</h3>
-          <p class="product-desc">
-            Turbosina para turbinas de aviación comercial e internacional, certificada rigurosamente bajo el estándar global ASTM D1655 y UK DEF STAN 91-091 con aditivo estático.
+          <h3 data-i18n="prod_jet_title">Turbosina de Aviación Jet A-1</h3>
+          <p class="product-desc" data-i18n="prod_jet_desc">
+            Queroseno de aviación para aeronaves comerciales, certificado bajo estándares globales ASTM D1655 y normas de aviación civil internacional.
           </p>
           <table class="spec-table">
             <tr><td class="spec-name">Punto de Congelación</td><td class="spec-val">&le; -47.0 °C</td></tr>
@@ -189,7 +198,7 @@
           <div class="product-footer-tags">
             <span class="incoterm-tag">FOB</span>
             <span class="incoterm-tag">CIF</span>
-            <span class="incoterm-tag">Certificación Joint Fuelling</span>
+            <span class="incoterm-tag">Joint Fuelling System</span>
           </div>
         </div>
 
@@ -197,20 +206,20 @@
         <div class="glass-card product-card product-card-item" data-category="bunkering" id="bunkering">
           <div class="product-card-header">
             <div class="product-icon-wrap gold">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"></path><path d="M4 18l2-9h12l2 9"></path><path d="M12 4v5"></path></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"></path><path d="M4 18l2-9h12l2 9"></path><path d="M12 4v5"></path></svg>
             </div>
-            <span class="badge badge-gold">Combustible Marino</span>
+            <span class="badge badge-gold">ISO 8217:2024</span>
           </div>
-          <h3>Very Low Sulfur Fuel Oil (VLSFO)</h3>
-          <p class="product-desc">
-            Fuel oil marino de muy bajo azufre conforme a las normativas de emisiones OMI (IMO 2020 MARPOL Anexo VI) para suministro directo en fondeaderos del Canal de Panamá.
+          <h3 data-i18n="prod_vlsfo_title">Fuel Oil Marino VLSFO 0.5% (ISO 8217)</h3>
+          <p class="product-desc" data-i18n="prod_vlsfo_desc">
+            Combustible marino de muy bajo azufre para buques que transitan el Canal de Panamá, plenamente conforme con el Anexo VI de MARPOL (OMI 2020).
           </p>
           <table class="spec-table">
             <tr><td class="spec-name">Contenido de Azufre</td><td class="spec-val">&le; 0.50 % mass</td></tr>
             <tr><td class="spec-name">Viscosidad @ 50°C</td><td class="spec-val">Hasta 380 mm²/s</td></tr>
             <tr><td class="spec-name">Densidad @ 15°C</td><td class="spec-val">&le; 991.0 kg/m³</td></tr>
             <tr><td class="spec-name">Punto de Inflamación</td><td class="spec-val">&ge; 60.0 °C</td></tr>
-            <tr><td class="spec-name">Norma de Referencia</td><td class="spec-val">ISO 8217:2024 RMG</td></tr>
+            <tr><td class="spec-name">Norma de Referencia</td><td class="spec-val">ISO 8217 RMG</td></tr>
           </table>
           <div class="product-footer-tags">
             <span class="incoterm-tag">Barge Delivery</span>
@@ -223,24 +232,24 @@
         <div class="glass-card product-card product-card-item" data-category="bunkering">
           <div class="product-card-header">
             <div class="product-icon-wrap">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
             </div>
-            <span class="badge badge-blue">Destilado Marino</span>
+            <span class="badge badge-blue">ECA 0.1%</span>
           </div>
-          <h3>Marine Gas Oil 0.1% (MGO DMA)</h3>
-          <p class="product-desc">
-            Gasóleo marino puro y destilado para zonas de control de emisiones (ECA). Apto para generadores auxiliares de buques portacontenedores, graneleros y cruceros.
+          <h3 data-i18n="prod_mgo_title">Marine Gas Oil (MGO DMA 0.1%)</h3>
+          <p class="product-desc" data-i18n="prod_mgo_desc">
+            Destilado marino puro para operación en zonas de control de emisiones (ECA) y motores auxiliares de embarcaciones de gran calado.
           </p>
           <table class="spec-table">
             <tr><td class="spec-name">Contenido de Azufre</td><td class="spec-val">&le; 0.10 % mass (1000 ppm)</td></tr>
             <tr><td class="spec-name">Viscosidad @ 40°C</td><td class="spec-val">2.00 – 6.00 mm²/s</td></tr>
             <tr><td class="spec-name">Punto de Inflamación</td><td class="spec-val">&ge; 60.0 °C</td></tr>
             <tr><td class="spec-name">Densidad @ 15°C</td><td class="spec-val">&le; 890.0 kg/m³</td></tr>
-            <tr><td class="spec-name">Norma de Referencia</td><td class="spec-val">ISO 8217:2024 DMA</td></tr>
+            <tr><td class="spec-name">Norma de Referencia</td><td class="spec-val">ISO 8217 DMA</td></tr>
           </table>
           <div class="product-footer-tags">
             <span class="incoterm-tag">ECA Compliant</span>
-            <span class="incoterm-tag">Suministro Ex-Pipe / Barge</span>
+            <span class="incoterm-tag">Ex-Pipe / Barge</span>
           </div>
         </div>
 
@@ -248,13 +257,13 @@
         <div class="glass-card product-card product-card-item" data-category="refinados">
           <div class="product-card-header">
             <div class="product-icon-wrap">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
             </div>
-            <span class="badge badge-blue">Combustibles Ligeros</span>
+            <span class="badge badge-blue">91 / 95 RON</span>
           </div>
-          <h3>Motor Gasoline (Mogas 91 &amp; 95 RON)</h3>
-          <p class="product-desc">
-            Gasolinas automotrices terminadas y bases de blending (BOB) con aditivos detergentes e inhibidores de corrosión según normas EN 228 / ASTM D4814.
+          <h3 data-i18n="prod_gas_title">Gasolinas de Motor (91 &amp; 95 RON)</h3>
+          <p class="product-desc" data-i18n="prod_gas_desc">
+            Gasolinas terminadas y componentes de mezcla (BOB) formuladas con especificaciones que garantizan óptima combustión y bajas emisiones.
           </p>
           <table class="spec-table">
             <tr><td class="spec-name">Número de Octano (RON)</td><td class="spec-val">91.0 / 95.0 mín.</td></tr>
@@ -266,7 +275,7 @@
           <div class="product-footer-tags">
             <span class="incoterm-tag">FOB</span>
             <span class="incoterm-tag">CIF</span>
-            <span class="incoterm-tag">Blending Customizado</span>
+            <span class="incoterm-tag">EN 228 / ASTM D4814</span>
           </div>
         </div>
 
@@ -274,13 +283,13 @@
         <div class="glass-card product-card product-card-item" data-category="petroquimicos">
           <div class="product-card-header">
             <div class="product-icon-wrap gold">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
             </div>
             <span class="badge badge-gold">Petroquímica</span>
           </div>
-          <h3>Light &amp; Heavy Virgin Naphtha</h3>
-          <p class="product-desc">
-            Materia prima esencial para plantas de craqueo por vapor (steam crackers) en la síntesis de olefinas (etileno, propileno) y unidades de reformación catalítica.
+          <h3 data-i18n="prod_naphtha_title">Nafta Petroquímica Virgen</h3>
+          <p class="product-desc" data-i18n="prod_naphtha_desc">
+            Materia prima parafínica esencial para complejos petroquímicos y unidades de reformación catalítica.
           </p>
           <table class="spec-table">
             <tr><td class="spec-name">Rango de Destilación</td><td class="spec-val">35 °C – 185 °C</td></tr>
@@ -292,7 +301,7 @@
           <div class="product-footer-tags">
             <span class="incoterm-tag">FOB</span>
             <span class="incoterm-tag">CIF</span>
-            <span class="incoterm-tag">Cargamento Bulk</span>
+            <span class="incoterm-tag">Cargamentos Bulk</span>
           </div>
         </div>
 
@@ -306,47 +315,47 @@
   <section class="section section-darker">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-blue">Procedimiento Comercial</span>
-        <h2>Flujo Operativo de Contratación Estándar</h2>
-        <p>Garantizamos transparencia y seguridad jurídica a través de protocolos internacionales validados.</p>
+        <span class="badge badge-blue" data-i18n="proc_badge">Procedimiento Comercial</span>
+        <h2 data-i18n="proc_title">Flujo de Contratación y Despacho</h2>
+        <p data-i18n="proc_sub">Protocolos claros y seguros desde la solicitud inicial hasta la entrega en destino.</p>
       </div>
 
       <div class="grid-4">
-        <div class="glass-card" style="padding:1.8rem;">
-          <div style="font-size:2rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.8rem;">01</div>
-          <h4 style="color:#FFFFFF; margin-bottom:0.5rem;">Solicitud &amp; KYC</h4>
-          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
-            El comprador remite su ICPO / RFQ formal junto a su ficha de debida diligencia de contraparte (CIS/KYC).
+        <div class="glass-card" style="padding:1.6rem;">
+          <div style="font-size:1.8rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.6rem;">01</div>
+          <h4 style="color:#FFFFFF; margin-bottom:0.4rem;" data-i18n="step_1_title">1. Requerimiento &amp; KYC</h4>
+          <p style="font-size:0.86rem; color:var(--text-muted); margin:0;" data-i18n="step_1_desc">
+            Recepción del requerimiento formal (RFQ / ICPO) junto con el formulario de debida diligencia de contraparte (CIS/KYC).
           </p>
         </div>
 
-        <div class="glass-card" style="padding:1.8rem;">
-          <div style="font-size:2rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.8rem;">02</div>
-          <h4 style="color:#FFFFFF; margin-bottom:0.5rem;">Oferta Corporativa</h4>
-          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
-            Petroganso emite la FCO (Full Corporate Offer) y borrador del contrato de compraventa (SPA) con especificaciones acordadas.
+        <div class="glass-card" style="padding:1.6rem;">
+          <div style="font-size:1.8rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.6rem;">02</div>
+          <h4 style="color:#FFFFFF; margin-bottom:0.4rem;" data-i18n="step_2_title">2. Oferta Formal (FCO)</h4>
+          <p style="font-size:0.86rem; color:var(--text-muted); margin:0;" data-i18n="step_2_desc">
+            Emisión de la Oferta Corporativa Completa con especificaciones de calidad, términos de entrega y borrador de contrato (SPA).
           </p>
         </div>
 
-        <div class="glass-card" style="padding:1.8rem;">
-          <div style="font-size:2rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.8rem;">03</div>
-          <h4 style="color:#FFFFFF; margin-bottom:0.5rem;">Garantía Financiera</h4>
-          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
-            Apertura de instrumento bancario de primer nivel (DLC irrevocable o SBLC confirmada) vía SWIFT MT760/MT700.
+        <div class="glass-card" style="padding:1.6rem;">
+          <div style="font-size:1.8rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.6rem;">03</div>
+          <h4 style="color:#FFFFFF; margin-bottom:0.4rem;" data-i18n="step_3_title">3. Garantía Financiera</h4>
+          <p style="font-size:0.86rem; color:var(--text-muted); margin:0;" data-i18n="step_3_desc">
+            Apertura de instrumento bancario irrevocable y confirmado (DLC / SBLC) vía SWIFT entre bancos calificados.
           </p>
         </div>
 
-        <div class="glass-card" style="padding:1.8rem;">
-          <div style="font-size:2rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.8rem;">04</div>
-          <h4 style="color:#FFFFFF; margin-bottom:0.5rem;">Carga &amp; Inspección</h4>
-          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
-            Inspección por Saybolt/SGS en puerto de carga, emisión de Conocimiento de Embarque (Bill of Lading) y despacho.
+        <div class="glass-card" style="padding:1.6rem;">
+          <div style="font-size:1.8rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.6rem;">04</div>
+          <h4 style="color:#FFFFFF; margin-bottom:0.4rem;" data-i18n="step_4_title">4. Inspección y Despacho</h4>
+          <p style="font-size:0.86rem; color:var(--text-muted); margin:0;" data-i18n="step_4_desc">
+            Muestreo e informe de inspección por laboratorio Saybolt o SGS en puerto de carga, emisión de Bill of Lading y zarpe.
           </p>
         </div>
       </div>
 
-      <div style="text-align:center; margin-top:3.5rem;">
-        <a href="contacto.html" class="btn btn-primary btn-lg">Solicitar Cotización para su Refinería o Flota</a>
+      <div style="text-align:center; margin-top:3rem;">
+        <a href="contacto.html" class="btn btn-primary btn-lg" data-i18n="hero_btn_rfq">Solicitar Cotización de Suministro</a>
       </div>
     </div>
   </section>
@@ -358,66 +367,66 @@
     <div class="container footer-top">
       <div class="footer-brand">
         <a href="index.html">
-          <img src="assets/images/logo.svg" alt="Petroganso Logo" width="220" height="42">
+          <img src="assets/images/logo.svg" alt="Petroganso Logo" width="200" height="40">
         </a>
-        <p>
-          Firma de trading y logística de hidrocarburos especializada en la compraventa de crudos y derivados refinados en las Américas y rutas marítimas globales.
+        <p data-i18n="footer_brand_desc">
+          Empresa de comercialización y logística de hidrocarburos especializada en la compra y venta mayorista de crudos y derivados refinados en las Américas.
         </p>
         <div class="footer-location-tag">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          <span>Ciudad de Panamá, República de Panamá</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span data-i18n="footer_loc">Ciudad de Panamá, República de Panamá</span>
         </div>
       </div>
 
       <div>
-        <h4 class="footer-title">Navegación</h4>
+        <h4 class="footer-title" data-i18n="footer_col_nav">Navegación</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Quiénes Somos</a></li>
-          <li><a href="productos.html">Productos &amp; Crudos</a></li>
-          <li><a href="operaciones.html">Operaciones &amp; Logística</a></li>
-          <li><a href="cumplimiento.html">Cumplimiento KYC / AML</a></li>
-          <li><a href="contacto.html">Mesa de Trading / RFQ</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+          <li><a href="nosotros.html" data-i18n="nav_about">Quiénes Somos</a></li>
+          <li><a href="productos.html" data-i18n="nav_products">Productos &amp; Crudos</a></li>
+          <li><a href="operaciones.html" data-i18n="nav_operations">Operaciones &amp; Logística</a></li>
+          <li><a href="cumplimiento.html" data-i18n="nav_compliance">Cumplimiento KYC / AML</a></li>
+          <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="footer-title">Materias Primas</h4>
+        <h4 class="footer-title" data-i18n="footer_col_prod">Productos Principales</h4>
         <ul class="footer-links">
-          <li><a href="productos.html#crudo">Petróleo Crudo Ligero</a></li>
-          <li><a href="productos.html#crudo">Petróleo Crudo Pesado</a></li>
-          <li><a href="productos.html#refinados">Diesel ULSD 10ppm</a></li>
-          <li><a href="productos.html#refinados">Jet Fuel A-1</a></li>
-          <li><a href="productos.html#bunkering">VLSFO 0.5% Marino</a></li>
-          <li><a href="productos.html#bunkering">Marine Gas Oil (MGO)</a></li>
+          <li><a href="productos.html#crudo" data-i18n="card_crude_title">Petróleo Crudo</a></li>
+          <li><a href="productos.html#refinados" data-i18n="card_refined_title">Diesel ULSD &amp; Refinados</a></li>
+          <li><a href="productos.html#bunkering" data-i18n="card_bunker_title">Bunkering Marino</a></li>
+          <li><a href="productos.html#jet" data-i18n="prod_jet_title">Turbosina Jet A-1</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="footer-title">Marco de Cumplimiento</h4>
+        <h4 class="footer-title" data-i18n="footer_col_comp">Marco Regulatorio</h4>
         <div class="footer-compliance-box">
-          <strong>Aviso Regulatorio:</strong>
-          Petroganso no sostiene relaciones comerciales con entidades, buques o jurisdicciones sancionadas por OFAC, Naciones Unidas o la Unión Europea. Toda contraparte debe superar el proceso de debida diligencia KYC/AML previo a la emisión de ofertas vinculantes.
+          <strong data-i18n="notice_title">Aviso de Cumplimiento:</strong>
+          <span data-i18n="footer_comp_text">Petroganso no efectúa operaciones con personas, entidades o buques sancionados por OFAC, la ONU o la UE. Toda relación comercial está sujeta al procedimiento previo de debida diligencia KYC/AML.</span>
         </div>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <div>
+      <div data-i18n="footer_copy">
         &copy; 2026 Petroganso Energy &amp; Commodities. Todos los derechos reservados.
       </div>
       <div class="footer-bottom-links">
-        <a href="cumplimiento.html#terminos">Términos Comerciales</a>
-        <a href="cumplimiento.html#privacidad">Política de Privacidad</a>
-        <a href="cumplimiento.html#kyc">Guía KYC</a>
+        <a href="cumplimiento.html#terminos" data-i18n="footer_terms">Términos Comerciales</a>
+        <a href="cumplimiento.html#privacidad" data-i18n="footer_privacy">Política de Privacidad</a>
+        <a href="cumplimiento.html#kyc" data-i18n="footer_kyc">Guía KYC</a>
       </div>
       <div class="cloudflare-badge">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
-        <span>Asegurado vía Cloudflare DNS &amp; SSL</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        <span data-i18n="footer_cloudflare">Asegurado vía Cloudflare DNS &amp; SSL</span>
       </div>
     </div>
   </footer>
 
+  <script src="js/translations.js"></script>
+  <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

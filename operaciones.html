@@ -16,33 +16,42 @@
        HEADER & NAVIGATION
        ========================================================================= -->
   <div class="header-wrapper">
-    <div class="ticker-bar" aria-label="Indicadores de Mercado Energético">
-      <div class="container ticker-wrap">
-        <div class="ticker-label">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
-          MERCADOS EN VIVO
+    <div class="ticker-bar" aria-label="Indicadores de Mercado Internacional">
+      <div class="ticker-wrap">
+        <div class="ticker-label-box">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span data-i18n="ticker_label">MERCADOS INTERNACIONALES</span>
         </div>
-        <div class="ticker-scroll"></div>
+        <div class="ticker-viewport">
+          <div class="ticker-scroll"></div>
+        </div>
       </div>
     </div>
 
-    <header class="navbar container">
+    <header class="navbar">
       <a href="index.html" class="brand-logo" aria-label="Petroganso Inicio">
-        <img src="assets/images/logo.svg" alt="Petroganso Energy & Commodities" width="220" height="42">
+        <img src="assets/images/logo.svg" alt="Petroganso Energy & Commodities" width="200" height="40">
       </a>
 
       <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link">Inicio</a>
-        <a href="nosotros.html" class="nav-link">Quiénes Somos</a>
-        <a href="productos.html" class="nav-link">Productos &amp; Crudos</a>
-        <a href="operaciones.html" class="nav-link active">Operaciones &amp; Logística</a>
-        <a href="cumplimiento.html" class="nav-link">Cumplimiento &amp; ESG</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Inicio</a>
+        <a href="nosotros.html" class="nav-link" data-i18n="nav_about">Quiénes Somos</a>
+        <a href="productos.html" class="nav-link" data-i18n="nav_products">Productos &amp; Crudos</a>
+        <a href="operaciones.html" class="nav-link active" data-i18n="nav_operations">Operaciones &amp; Logística</a>
+        <a href="cumplimiento.html" class="nav-link" data-i18n="nav_compliance">Cumplimiento &amp; ESG</a>
+        <a href="contacto.html" class="nav-link" data-i18n="nav_contact">Contacto</a>
       </nav>
 
       <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Selector de Idioma">
+          <button type="button" class="lang-btn active" data-lang="es">ES</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+
         <a href="contacto.html" class="btn btn-primary">
-          <span>Mesa de Trading / RFQ</span>
+          <span data-i18n="nav_cta">Solicitar Suministro</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
         </a>
       </div>
 
@@ -58,14 +67,14 @@
   <section class="inner-hero">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html">Inicio</a>
+        <a href="index.html" data-i18n="nav_home">Inicio</a>
         <span class="sep">/</span>
-        <span class="current">Operaciones &amp; Logística</span>
+        <span class="current" data-i18n="nav_operations">Operaciones &amp; Logística</span>
       </div>
-      <span class="badge badge-gold">Cadena de Suministro</span>
-      <h1 style="margin: 0.8rem 0 1rem 0;">Excelencia Marítima en la Encrucijada del Mundo</h1>
-      <p class="lead" style="max-width: 740px;">
-        Apalancamos la infraestructura portuaria, terminales de almacenamiento y fondeaderos de aguas profundas de Panamá para optimizar el transporte, alijo y despacho de cargamentos energéticos.
+      <span class="badge badge-gold" data-i18n="badge_supply_chain">Cadena de Suministro</span>
+      <h1 style="margin: 0.6rem 0 0.8rem 0;" data-i18n="ops_h1">Excelencia Logística en la Encrucijada Marítima</h1>
+      <p class="lead" style="max-width: 740px;" data-i18n="ops_lead">
+        Infraestructura portuaria, terminales de almacenamiento y alianzas estratégicas para asegurar el transporte puntual y seguro de cargamentos.
       </p>
     </div>
   </section>
@@ -73,31 +82,28 @@
   <!-- =========================================================================
        PANAMA STRATEGIC NODE
        ========================================================================= -->
-  <section class="section" style="padding-top:3.5rem;">
+  <section class="section" style="padding-top:2.8rem;">
     <div class="container">
-      <div class="grid-2" style="align-items:center; gap:3.5rem;">
+      <div class="grid-2" style="align-items:center; gap:3rem;">
         <div>
-          <span class="badge badge-blue">Conexión Interoceánica</span>
-          <h2 style="margin: 1rem 0 1.2rem 0;">Operaciones en Ambos Lados del Canal de Panamá</h2>
-          <p>
-            El Canal de Panamá no es únicamente una vía de tránsito; es uno de los mayores centros neurálgicos de abastecimiento de combustible marino (bunkering) y transferencias de carga en el hemisferio occidental.
-          </p>
-          <p>
-            Coordinamos servicios marítimos de primera línea en los dos accesos oceánicos:
+          <span class="badge badge-blue" data-i18n="ops_canal_badge">Eje Interoceánico</span>
+          <h2 style="margin: 0.9rem 0 1.1rem 0;" data-i18n="ops_canal_title">Operaciones Portuarias en Ambas Entradas del Canal</h2>
+          <p data-i18n="ops_canal_p1">
+            Panamá es el punto focal de las rutas comerciales del hemisferio. Coordinamos suministros marítimos en los dos accesos oceánicos con total agilidad:
           </p>
 
-          <div style="display:flex; flex-direction:column; gap:1.2rem; margin-top:1.8rem;">
-            <div style="background:var(--bg-surface); padding:1.4rem; border-radius:var(--radius-md); border-left:4px solid var(--gold-500);">
-              <h4 style="color:#FFFFFF; margin-bottom:0.3rem;">Sector Pacífico (Balboa / Isla Taboguilla)</h4>
-              <p style="font-size:0.9rem; margin:0; color:var(--text-secondary);">
-                Atención a buques en ruta hacia la Costa Oeste de Sudamérica, México y Asia. Disponibilidad de barcazas de doble casco para suministro de VLSFO y MGO en fondeadero oficial.
+          <div style="display:flex; flex-direction:column; gap:1.1rem; margin-top:1.6rem;">
+            <div style="background:var(--bg-surface); padding:1.2rem 1.4rem; border-radius:var(--radius-md); border-left:4px solid var(--gold-500);">
+              <h4 style="color:#FFFFFF; margin-bottom:0.25rem;" data-i18n="ops_pac_title">Sector Pacífico (Balboa / Isla Taboguilla)</h4>
+              <p style="font-size:0.88rem; margin:0; color:var(--text-secondary);" data-i18n="ops_pac_desc">
+                Atención a buques en ruta hacia la costa oeste de las Américas y Asia. Suministro de combustible marino en fondeaderos oficiales autorizados por la AMP.
               </p>
             </div>
 
-            <div style="background:var(--bg-surface); padding:1.4rem; border-radius:var(--radius-md); border-left:4px solid var(--blue-400);">
-              <h4 style="color:#FFFFFF; margin-bottom:0.3rem;">Sector Atlántico / Caribe (Cristóbal / Bahía Las Minas)</h4>
-              <p style="font-size:0.9rem; margin:0; color:var(--text-secondary);">
-                Conexión directa con refinerías del Golfo de México (USGC), el Caribe y Europa. Operaciones de alijo (lightering) y almacenamiento en tanques costeros.
+            <div style="background:var(--bg-surface); padding:1.2rem 1.4rem; border-radius:var(--radius-md); border-left:4px solid var(--blue-400);">
+              <h4 style="color:#FFFFFF; margin-bottom:0.25rem;" data-i18n="ops_atl_title">Sector Atlántico (Cristóbal / Bahía Las Minas)</h4>
+              <p style="font-size:0.88rem; margin:0; color:var(--text-secondary);" data-i18n="ops_atl_desc">
+                Conexión con refinerías y terminales de los Estados Unidos (USGC), el Caribe y Europa. Gestión de transferencias y optimización de lotes de carga.
               </p>
             </div>
           </div>
@@ -107,7 +113,7 @@
           <img src="assets/images/bunkering-canal.jpg" alt="Operación de Bunkering en el Canal de Panamá" width="600" height="400">
           <div class="hub-badge-float">
             <strong style="color:#FFFFFF; display:block;">Operación de Bunkering en Balboa Anchorage</strong>
-            <span style="font-size:0.85rem; color:var(--text-muted);">Suministro VLSFO y MGO con medidores de flujo másico Coriolis</span>
+            <span style="font-size:0.82rem; color:var(--text-muted);">Suministro VLSFO y MGO con medidores de flujo másico Coriolis</span>
           </div>
         </div>
       </div>
@@ -120,57 +126,57 @@
   <section class="section section-darker">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-gold">Capacidad Operativa</span>
-        <h2>Servicios Marítimos y Gestión de Cargas</h2>
-        <p>Soluciones integradas para asegurar que cada barril llegue a su destino con cero pérdidas y total conformidad técnica.</p>
+        <span class="badge badge-gold" data-i18n="ops_cap_badge">Capacidades Logísticas</span>
+        <h2 data-i18n="ops_cap_title">Servicios de Transporte y Almacenamiento</h2>
+        <p data-i18n="ops_cap_sub">Control riguroso de cada etapa para garantizar la integridad del producto y la eficiencia en costos.</p>
       </div>
 
       <div class="grid-3">
         <!-- 1. Fletamento Marítimo -->
         <div class="glass-card">
-          <div class="product-icon-wrap gold" style="margin-bottom:1.5rem;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"></path><path d="M4 18l2-9h12l2 9"></path><path d="M12 4v5"></path></svg>
+          <div class="product-icon-wrap gold" style="margin-bottom:1.3rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"></path><path d="M4 18l2-9h12l2 9"></path><path d="M12 4v5"></path></svg>
           </div>
-          <h3>Fletamento y Chartering</h3>
-          <p>
-            Gestión de fletes bajo contratos de viaje (Voyage Charter) y tiempo (Time Charter). Trabajamos exclusivamente con armadores aprobados bajo el sistema de inspección SIRE / OCIMF.
+          <h3 data-i18n="ops_card1_title">Fletamento de Buques Tanque</h3>
+          <p data-i18n="ops_card1_desc">
+            Contratación de buques bajo estándares de inspección SIRE / OCIMF, doble casco mandatorio y cobertura con clubes P&amp;I de primer orden.
           </p>
-          <ul style="margin-top:1rem; font-size:0.88rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.4rem;">
+          <ul style="margin-top:0.9rem; font-size:0.86rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.4rem;">
             <li>✓ Buques tanque doble casco certificados</li>
-            <li>✓ P&amp;I Club de primer orden (International Group)</li>
-            <li>✓ Monitoreo satelital AIS en tiempo real</li>
+            <li>✓ Cobertura con clubes P&amp;I International Group</li>
+            <li>✓ Monitoreo de posicionamiento AIS en ruta</li>
           </ul>
         </div>
 
         <!-- 2. Transferencias STS -->
         <div class="glass-card">
-          <div class="product-icon-wrap" style="margin-bottom:1.5rem;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="12" r="3"></circle><circle cx="17" cy="12" r="3"></circle><line x1="10" y1="12" x2="14" y2="12"></line></svg>
+          <div class="product-icon-wrap" style="margin-bottom:1.3rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="12" r="3"></circle><circle cx="17" cy="12" r="3"></circle><line x1="10" y1="12" x2="14" y2="12"></line></svg>
           </div>
-          <h3>Transferencias Buque a Buque (STS)</h3>
-          <p>
-            Ejecución de operaciones STS en áreas designadas para alijo y optimización de calado. Cumplimiento integral del manual de transferencias STS de OCIMF/ICS.
+          <h3 data-i18n="ops_card2_title">Transferencias Buque a Buque (STS)</h3>
+          <p data-i18n="ops_card2_desc">
+            Operaciones de alijo y transbordo en áreas autorizadas de aguas profundas, siguiendo estrictamente el manual OCIMF/ICS.
           </p>
-          <ul style="margin-top:1rem; font-size:0.88rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.4rem;">
-            <li>✓ Defensas neumáticas Yokohama de alta absorción</li>
-            <li>✓ Mangueras de transferencia certificadas y probadas</li>
-            <li>✓ Superintendente de atraque (Mooring Master) presente</li>
+          <ul style="margin-top:0.9rem; font-size:0.86rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.4rem;">
+            <li>✓ Defensas neumáticas Yokohama certificadas</li>
+            <li>✓ Mangueras de alta resistencia probadas y selladas</li>
+            <li>✓ Presencia de Mooring Master calificado</li>
           </ul>
         </div>
 
         <!-- 3. Almacenamiento & Blending -->
         <div class="glass-card">
-          <div class="product-icon-wrap gold" style="margin-bottom:1.5rem;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          <div class="product-icon-wrap gold" style="margin-bottom:1.3rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
           </div>
-          <h3>Terminaling y Mezclado (Blending)</h3>
-          <p>
-            Alianzas con parques de tanques en terminales caribeñas y panameñas que permiten almacenar componentes y realizar mezclas de combustible según especificaciones a la medida.
+          <h3 data-i18n="ops_card3_title">Almacenamiento en Terminales</h3>
+          <p data-i18n="ops_card3_desc">
+            Acceso a capacidad de tanques para consolidación de inventario, segregación de productos y cumplimiento de especificaciones técnicas.
           </p>
-          <ul style="margin-top:1rem; font-size:0.88rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.4rem;">
+          <ul style="margin-top:0.9rem; font-size:0.86rem; color:var(--text-muted); display:flex; flex-direction:column; gap:0.4rem;">
             <li>✓ Segregación estricta de productos limpios y sucios</li>
-            <li>✓ Inyección de aditivos reductores de fricción y pour-point</li>
-            <li>✓ Monitoreo continuo de temperatura e inventario</li>
+            <li>✓ Ensayos de laboratorio Saybolt y SGS antes de bombeo</li>
+            <li>✓ Control volumétrico y de temperatura en tanques</li>
           </ul>
         </div>
       </div>
@@ -184,49 +190,49 @@
     <div class="container">
       <div class="grid-2" style="align-items:center; gap:3rem;">
         <div>
-          <span class="badge badge-emerald">Seguridad Marítima &amp; HSE</span>
-          <h2 style="margin: 1rem 0 1.2rem 0;">Protocolos de Seguridad Ambiental y Cero Derrames</h2>
-          <p>
-            El transporte de crudo y derivados exige el máximo respeto por el ecosistema marino. En Petroganso aplicamos una política rigurosa de mitigación ambiental en conjunto con la Autoridad Marítima de Panamá (AMP) y las regulaciones internacionales MARPOL.
+          <span class="badge badge-emerald" data-i18n="ops_hse_badge">Seguridad y Medio Ambiente</span>
+          <h2 style="margin: 0.9rem 0 1.1rem 0;" data-i18n="ops_hse_title">Protocolos de Seguridad y Prevención de Riesgos</h2>
+          <p data-i18n="ops_hse_p1">
+            El manejo de hidrocarburos exige el máximo rigor operacional. Aplicamos normativas estrictas alineadas con la Autoridad Marítima de Panamá y los convenios internacionales MARPOL.
           </p>
 
-          <div style="display:flex; flex-direction:column; gap:1rem; margin-top:1.5rem;">
-            <div style="display:flex; align-items:flex-start; gap:0.8rem;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-400)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <div style="display:flex; flex-direction:column; gap:0.9rem; margin-top:1.4rem;">
+            <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-400)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <div>
-                <strong style="color:#FFFFFF;">Inspección Vetting SIRE Obligatoria:</strong>
-                <p style="font-size:0.88rem; margin:0; color:var(--text-secondary);">Ningún buque es fletado sin informe de inspección vigente con menos de 6 meses de antigüedad.</p>
+                <strong style="color:#FFFFFF;" data-i18n="ops_hse_pt1_t">Inspección Rigurosa de Buques:</strong>
+                <p style="font-size:0.86rem; margin:0; color:var(--text-secondary);" data-i18n="ops_hse_pt1_d">Ningún tanquero es aceptado sin reporte de inspección técnica vigente y certificación de doble casco.</p>
               </div>
             </div>
 
-            <div style="display:flex; align-items:flex-start; gap:0.8rem;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-400)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-400)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <div>
-                <strong style="color:#FFFFFF;">Planes SOPEP / SMPEP:</strong>
-                <p style="font-size:0.88rem; margin:0; color:var(--text-secondary);">Planes de emergencia aprobados a bordo de cada tanquero para respuesta inmediata ante contingencias marinas.</p>
+                <strong style="color:#FFFFFF;" data-i18n="ops_hse_pt2_t">Planes de Contingencia SOPEP:</strong>
+                <p style="font-size:0.86rem; margin:0; color:var(--text-secondary);" data-i18n="ops_hse_pt2_d">Equipos y protocolos a bordo para respuesta inmediata ante cualquier incidente en aguas territoriales o internacionales.</p>
               </div>
             </div>
 
-            <div style="display:flex; align-items:flex-start; gap:0.8rem;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-400)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-400)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <div>
-                <strong style="color:#FFFFFF;">Mitigación de Demoras (Demurrage Control):</strong>
-                <p style="font-size:0.88rem; margin:0; color:var(--text-secondary);">Coordinación anticipada con agencias marítimas de puerto para reducir tiempos de espera en rada y atracadero.</p>
+                <strong style="color:#FFFFFF;" data-i18n="ops_hse_pt3_t">Control de Demoras (Demurrage):</strong>
+                <p style="font-size:0.86rem; margin:0; color:var(--text-secondary);" data-i18n="ops_hse_pt3_d">Coordinación precisa de arribo para minimizar tiempos de fondeo y costos adicionales.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="glass-card" style="border-color:rgba(16,185,129,0.3); background:rgba(17,34,56,0.5);">
-          <h3 style="color:#FFFFFF; margin-bottom:1rem; display:flex; align-items:center; gap:0.6rem;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-400)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        <div class="glass-card" style="border-color:rgba(16,185,129,0.3); background:rgba(16,33,54,0.55);">
+          <h3 style="color:#FFFFFF; margin-bottom:0.85rem; display:flex; align-items:center; gap:0.5rem; font-size:1.15rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-400)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             Compromiso OMI 2020 / MARPOL Anexo VI
           </h3>
-          <p style="font-size:0.95rem; color:var(--text-secondary);">
+          <p style="font-size:0.92rem; color:var(--text-secondary); line-height:1.6;">
             Todos los combustibles suministrados por Petroganso en los fondeaderos de Panamá cumplen con el límite de 0.50% masa/masa de azufre, reduciendo significativamente las emisiones de óxidos de azufre (SOx) a la atmósfera y protegiendo las comunidades litorales.
           </p>
-          <div style="margin-top:1.5rem; padding-top:1.2rem; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; align-items:center;">
-            <span style="font-size:0.85rem; color:var(--text-muted);">Estándar Internacional</span>
+          <div style="margin-top:1.3rem; padding-top:1.1rem; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-size:0.82rem; color:var(--text-muted);">Estándar Internacional</span>
             <span class="badge badge-emerald">MARPOL VI Compliant</span>
           </div>
         </div>
@@ -241,66 +247,66 @@
     <div class="container footer-top">
       <div class="footer-brand">
         <a href="index.html">
-          <img src="assets/images/logo.svg" alt="Petroganso Logo" width="220" height="42">
+          <img src="assets/images/logo.svg" alt="Petroganso Logo" width="200" height="40">
         </a>
-        <p>
-          Firma de trading y logística de hidrocarburos especializada en la compraventa de crudos y derivados refinados en las Américas y rutas marítimas globales.
+        <p data-i18n="footer_brand_desc">
+          Empresa de comercialización y logística de hidrocarburos especializada en la compra y venta mayorista de crudos y derivados refinados en las Américas.
         </p>
         <div class="footer-location-tag">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          <span>Ciudad de Panamá, República de Panamá</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span data-i18n="footer_loc">Ciudad de Panamá, República de Panamá</span>
         </div>
       </div>
 
       <div>
-        <h4 class="footer-title">Navegación</h4>
+        <h4 class="footer-title" data-i18n="footer_col_nav">Navegación</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Quiénes Somos</a></li>
-          <li><a href="productos.html">Productos &amp; Crudos</a></li>
-          <li><a href="operaciones.html">Operaciones &amp; Logística</a></li>
-          <li><a href="cumplimiento.html">Cumplimiento KYC / AML</a></li>
-          <li><a href="contacto.html">Mesa de Trading / RFQ</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+          <li><a href="nosotros.html" data-i18n="nav_about">Quiénes Somos</a></li>
+          <li><a href="productos.html" data-i18n="nav_products">Productos &amp; Crudos</a></li>
+          <li><a href="operaciones.html" data-i18n="nav_operations">Operaciones &amp; Logística</a></li>
+          <li><a href="cumplimiento.html" data-i18n="nav_compliance">Cumplimiento KYC / AML</a></li>
+          <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="footer-title">Materias Primas</h4>
+        <h4 class="footer-title" data-i18n="footer_col_prod">Productos Principales</h4>
         <ul class="footer-links">
-          <li><a href="productos.html#crudo">Petróleo Crudo Ligero</a></li>
-          <li><a href="productos.html#crudo">Petróleo Crudo Pesado</a></li>
-          <li><a href="productos.html#refinados">Diesel ULSD 10ppm</a></li>
-          <li><a href="productos.html#refinados">Jet Fuel A-1</a></li>
-          <li><a href="productos.html#bunkering">VLSFO 0.5% Marino</a></li>
-          <li><a href="productos.html#bunkering">Marine Gas Oil (MGO)</a></li>
+          <li><a href="productos.html#crudo" data-i18n="card_crude_title">Petróleo Crudo</a></li>
+          <li><a href="productos.html#refinados" data-i18n="card_refined_title">Diesel ULSD &amp; Refinados</a></li>
+          <li><a href="productos.html#bunkering" data-i18n="card_bunker_title">Bunkering Marino</a></li>
+          <li><a href="productos.html#jet" data-i18n="prod_jet_title">Turbosina Jet A-1</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="footer-title">Marco de Cumplimiento</h4>
+        <h4 class="footer-title" data-i18n="footer_col_comp">Marco Regulatorio</h4>
         <div class="footer-compliance-box">
-          <strong>Aviso Regulatorio:</strong>
-          Petroganso no sostiene relaciones comerciales con entidades, buques o jurisdicciones sancionadas por OFAC, Naciones Unidas o la Unión Europea. Toda contraparte debe superar el proceso de debida diligencia KYC/AML previo a la emisión de ofertas vinculantes.
+          <strong data-i18n="notice_title">Aviso de Cumplimiento:</strong>
+          <span data-i18n="footer_comp_text">Petroganso no efectúa operaciones con personas, entidades o buques sancionados por OFAC, la ONU o la UE. Toda relación comercial está sujeta al procedimiento previo de debida diligencia KYC/AML.</span>
         </div>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <div>
+      <div data-i18n="footer_copy">
         &copy; 2026 Petroganso Energy &amp; Commodities. Todos los derechos reservados.
       </div>
       <div class="footer-bottom-links">
-        <a href="cumplimiento.html#terminos">Términos Comerciales</a>
-        <a href="cumplimiento.html#privacidad">Política de Privacidad</a>
-        <a href="cumplimiento.html#kyc">Guía KYC</a>
+        <a href="cumplimiento.html#terminos" data-i18n="footer_terms">Términos Comerciales</a>
+        <a href="cumplimiento.html#privacidad" data-i18n="footer_privacy">Política de Privacidad</a>
+        <a href="cumplimiento.html#kyc" data-i18n="footer_kyc">Guía KYC</a>
       </div>
       <div class="cloudflare-badge">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
-        <span>Asegurado vía Cloudflare DNS &amp; SSL</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        <span data-i18n="footer_cloudflare">Asegurado vía Cloudflare DNS &amp; SSL</span>
       </div>
     </div>
   </footer>
 
+  <script src="js/translations.js"></script>
+  <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

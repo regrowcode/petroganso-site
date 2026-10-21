@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiénes Somos | Petroganso Energy &amp; Commodities • Panamá</title>
-  <meta name="description" content="Conozca la visión, gobierno corporativo y capacidades de trading de Petroganso en Ciudad de Panamá. Conectando refinerías y mercados marítimos con integridad y solvencia.">
+  <title>Quiénes Somos | Petroganso Energy • Panamá</title>
+  <meta name="description" content="Conozca la visión, gobierno corporativo y capacidades de comercialización de hidrocarburos de Petroganso en Ciudad de Panamá. Conectando refinerías y flotas con integridad y solvencia.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
   <link rel="stylesheet" href="css/style.css">
@@ -16,33 +16,42 @@
        HEADER & NAVIGATION
        ========================================================================= -->
   <div class="header-wrapper">
-    <div class="ticker-bar" aria-label="Indicadores de Mercado Energético">
-      <div class="container ticker-wrap">
-        <div class="ticker-label">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
-          MERCADOS EN VIVO
+    <div class="ticker-bar" aria-label="Indicadores de Mercado Internacional">
+      <div class="ticker-wrap">
+        <div class="ticker-label-box">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span data-i18n="ticker_label">MERCADOS INTERNACIONALES</span>
         </div>
-        <div class="ticker-scroll"></div>
+        <div class="ticker-viewport">
+          <div class="ticker-scroll"></div>
+        </div>
       </div>
     </div>
 
-    <header class="navbar container">
+    <header class="navbar">
       <a href="index.html" class="brand-logo" aria-label="Petroganso Inicio">
-        <img src="assets/images/logo.svg" alt="Petroganso Energy & Commodities" width="220" height="42">
+        <img src="assets/images/logo.svg" alt="Petroganso Energy & Commodities" width="200" height="40">
       </a>
 
       <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link">Inicio</a>
-        <a href="nosotros.html" class="nav-link active">Quiénes Somos</a>
-        <a href="productos.html" class="nav-link">Productos &amp; Crudos</a>
-        <a href="operaciones.html" class="nav-link">Operaciones &amp; Logística</a>
-        <a href="cumplimiento.html" class="nav-link">Cumplimiento &amp; ESG</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Inicio</a>
+        <a href="nosotros.html" class="nav-link active" data-i18n="nav_about">Quiénes Somos</a>
+        <a href="productos.html" class="nav-link" data-i18n="nav_products">Productos &amp; Crudos</a>
+        <a href="operaciones.html" class="nav-link" data-i18n="nav_operations">Operaciones &amp; Logística</a>
+        <a href="cumplimiento.html" class="nav-link" data-i18n="nav_compliance">Cumplimiento &amp; ESG</a>
+        <a href="contacto.html" class="nav-link" data-i18n="nav_contact">Contacto</a>
       </nav>
 
       <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Selector de Idioma">
+          <button type="button" class="lang-btn active" data-lang="es">ES</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+
         <a href="contacto.html" class="btn btn-primary">
-          <span>Mesa de Trading / RFQ</span>
+          <span data-i18n="nav_cta">Solicitar Suministro</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
         </a>
       </div>
 
@@ -58,14 +67,14 @@
   <section class="inner-hero">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html">Inicio</a>
+        <a href="index.html" data-i18n="nav_home">Inicio</a>
         <span class="sep">/</span>
-        <span class="current">Quiénes Somos</span>
+        <span class="current" data-i18n="nav_about">Quiénes Somos</span>
       </div>
-      <span class="badge badge-gold">Perfil Corporativo</span>
-      <h1 style="margin: 0.8rem 0 1rem 0;">Solidez, Visión Global y Rigor Energético</h1>
-      <p class="lead" style="max-width: 720px;">
-        Petroganso nace en Ciudad de Panamá como una respuesta moderna y ágil a la creciente demanda de crudos y combustibles de alta especificación en las principales rutas interoceánicas.
+      <span class="badge badge-gold" data-i18n="badge_profile">Perfil Institucional</span>
+      <h1 style="margin: 0.6rem 0 0.8rem 0;" data-i18n="about_h1">Solidez Institucional, Visión Global y Rigor Comercial</h1>
+      <p class="lead" style="max-width: 720px;" data-i18n="about_lead">
+        Petroganso se establece en Ciudad de Panamá para ofrecer un suministro confiable, transparente y técnicamente certificado de hidrocarburos a clientes mayoristas.
       </p>
     </div>
   </section>
@@ -77,44 +86,44 @@
     <div class="notice-box">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
       <div>
-        <p><strong>Estatus Legal en Panamá:</strong> Petroganso se encuentra en fase de consolidación societaria formal ante el Registro Público de la República de Panamá. Una vez protocolizada la escritura definitiva, esta sección se actualizará con los números de registro mercantil, directores inscritos y domicilio fiscal oficial en el centro financiero internacional de la ciudad.</p>
+        <p><strong data-i18n="notice_title">Transparencia y Constitución Corporativa:</strong> <span data-i18n="notice_text">Petroganso se encuentra en fase final de protocolización societaria y personería jurídica mercantil ante las autoridades de la República de Panamá. Las operaciones comerciales se planifican bajo los más rigurosos marcos de debida diligencia KYC/AML y normativas del comercio marítimo internacional.</span></p>
       </div>
     </div>
   </div>
 
   <!-- =========================================================================
-       ABOUT US DETAILS & TRADING DESK
+       ABOUT US DETAILS
        ========================================================================= -->
-  <section class="section" style="padding-top:2rem;">
+  <section class="section" style="padding-top:1.5rem;">
     <div class="container">
-      <div class="grid-2" style="align-items:center; gap:3.5rem;">
+      <div class="grid-2" style="align-items:center; gap:3rem;">
         <div>
-          <span class="badge badge-blue">Nuestra Trayectoria</span>
-          <h2 style="margin: 1rem 0 1.2rem 0;">Facilitamos el Flujo Eficiente de la Energía Mundial</h2>
-          <p>
-            El mercado de commodities energéticos exige precisión milimétrica, solvencia de contraparte y un entendimiento profundo de la logística marítima. En **Petroganso**, estructuramos operaciones de compraventa física de hidrocarburos respaldadas por garantías bancarias de primer orden y los mayores laboratorios de certificación a nivel mundial.
+          <span class="badge badge-blue" data-i18n="about_sec_badge">Nuestra Identidad</span>
+          <h2 style="margin: 0.9rem 0 1.1rem 0;" data-i18n="about_sec_title">Garantizamos el Abastecimiento Confiable de Hidrocarburos</h2>
+          <p data-i18n="about_sec_p1">
+            La comercialización de energéticos requiere solvencia, cumplimiento estricto de especificaciones y precisión logística. En Petroganso estructuramos operaciones de compra y venta física respaldadas por instrumentos bancarios de primer orden y laboratorios independientes reconocidos.
           </p>
-          <p>
-            Operar desde **Panamá** nos otorga una posición de observación inmejorable sobre el tráfico de crudo y refinados que conecta la cuenca atlántica (Golfo de México, Mar del Norte, África Occidental) con los centros de consumo en el Pacífico y Sudamérica.
+          <p data-i18n="about_sec_p2">
+            Nuestra posición en Panamá nos permite coordinar cargamentos marítimos entre productores del Golfo de México, el Caribe y Sudamérica, hacia refinerías y distribuidores en mercados receptores.
           </p>
 
-          <div class="grid-2" style="margin-top:2rem; gap:1.2rem;">
+          <div class="grid-2" style="margin-top:1.8rem; gap:1.1rem;">
             <div style="background:var(--bg-surface); padding:1.2rem; border-radius:var(--radius-md); border-left:3px solid var(--gold-500);">
-              <h4 style="color:#FFFFFF; margin-bottom:0.3rem;">Visión 360°</h4>
-              <p style="font-size:0.88rem; margin:0; color:var(--text-muted);">Integración desde boca de pozo y terminales de carga hasta entrega en tanque o refinería receptora.</p>
+              <h4 style="color:#FFFFFF; margin-bottom:0.25rem;" data-i18n="about_block1_title">Enfoque Integral</h4>
+              <p style="font-size:0.86rem; margin:0; color:var(--text-muted);" data-i18n="about_block1_desc">Aseguramiento del cargamento desde el puerto de origen, verificación de calidad en carga, y entrega puntual en el puerto convenido.</p>
             </div>
             <div style="background:var(--bg-surface); padding:1.2rem; border-radius:var(--radius-md); border-left:3px solid var(--blue-400);">
-              <h4 style="color:#FFFFFF; margin-bottom:0.3rem;">Cero Tolerancia</h4>
-              <p style="font-size:0.88rem; margin:0; color:var(--text-muted);">Estricto cumplimiento normativo contra el lavado de activos, sanciones internacionales y fraude documental.</p>
+              <h4 style="color:#FFFFFF; margin-bottom:0.25rem;" data-i18n="about_block2_title">Cero Tolerancia</h4>
+              <p style="font-size:0.86rem; margin:0; color:var(--text-muted);" data-i18n="about_block2_desc">Políticas intransigentes contra el lavado de activos, estricta verificación de listas de sanciones y total transparencia contractual.</p>
             </div>
           </div>
         </div>
 
         <div class="hub-visual-card">
-          <img src="assets/images/trading-desk.jpg" alt="Mesa de Trading Petroganso en Ciudad de Panamá" width="600" height="400">
+          <img src="assets/images/trading-desk.jpg" alt="Oficinas Comerciales Petroganso en Ciudad de Panamá" width="600" height="400">
           <div class="hub-badge-float">
-            <strong style="color:#FFFFFF; display:block;">Mesa de Operaciones &amp; Trading Físico</strong>
-            <span style="font-size:0.85rem; color:var(--text-muted);">Ciudad de Panamá • Monitoreo Global de Fletes y Crudos</span>
+            <strong style="color:#FFFFFF; display:block;">Oficinas Comerciales &amp; Gestión Logística</strong>
+            <span style="font-size:0.82rem; color:var(--text-muted);">Ciudad de Panamá • Monitoreo de Rutas de Hidrocarburos</span>
           </div>
         </div>
       </div>
@@ -127,39 +136,39 @@
   <section class="section section-darker">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-gold">Pilares de Excelencia</span>
-        <h2>Propósito y Fundamentos Institucionales</h2>
-        <p>Principios rectores que guían cada contrato, fletamento y relación comercial de Petroganso en los mercados energéticos.</p>
+        <span class="badge badge-gold" data-i18n="pillar_badge">Principios Corporativos</span>
+        <h2 data-i18n="pillar_title">Misión, Visión y Compromiso Ético</h2>
+        <p data-i18n="pillar_sub">Directrices fundamentales que rigen cada contrato, fletamento y acuerdo comercial.</p>
       </div>
 
       <div class="grid-3">
         <div class="glass-card">
-          <div class="product-icon-wrap gold" style="margin-bottom:1.5rem;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12 12 16 14"></polygon></svg>
+          <div class="product-icon-wrap gold" style="margin-bottom:1.3rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 6 12 12 16 14"></polygon></svg>
           </div>
-          <h3>Nuestra Misión</h3>
-          <p>
-            Proveer soluciones de suministro físico de crudo y refinados con puntualidad inflexible, calidad certificada y máxima transparencia contractual, fortaleciendo el rol de Panamá como el hub comercial más seguro de América Latina.
+          <h3 data-i18n="mission_title">Nuestra Misión</h3>
+          <p data-i18n="mission_desc">
+            Suministrar crudos y combustibles refinados de máxima calidad con estricto apego a los plazos pactados y normativas internacionales, consolidando la reputación de Panamá como hub de comercio legítimo.
           </p>
         </div>
 
         <div class="glass-card">
-          <div class="product-icon-wrap" style="margin-bottom:1.5rem;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <div class="product-icon-wrap" style="margin-bottom:1.3rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>
           </div>
-          <h3>Nuestra Visión</h3>
-          <p>
-            Ser reconocidos en 2030 como la casa de comercio de energía independiente de mayor confiabilidad y eficiencia operativa en el eje interoceánico de las Américas, pionera en estándares de gobernanza y sostenibilidad ambiental.
+          <h3 data-i18n="vision_title">Nuestra Visión</h3>
+          <p data-i18n="vision_desc">
+            Ser una empresa líder en comercialización y logística de hidrocarburos en el eje interoceánico de las Américas, reconocida por la solvencia, cumplimiento técnico y relaciones comerciales sostenibles.
           </p>
         </div>
 
         <div class="glass-card">
-          <div class="product-icon-wrap gold" style="margin-bottom:1.5rem;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <div class="product-icon-wrap gold" style="margin-bottom:1.3rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
           </div>
-          <h3>Integridad &amp; Cumplimiento</h3>
-          <p>
-            Actuamos con una política intransigente de legalidad, ética comercial y debida diligencia. Solo operamos con actores bancarizados y activos auditados que respeten las leyes marítimas y ambientales internacionales.
+          <h3 data-i18n="integrity_title">Integridad y Cumplimiento</h3>
+          <p data-i18n="integrity_desc">
+            Operamos únicamente con contrapartes bancarizadas y solventes que cumplan los protocolos internacionales KYC/AML y las normativas de la Organización Marítima Internacional.
           </p>
         </div>
       </div>
@@ -172,42 +181,42 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="badge badge-blue">Organización</span>
-        <h2>Estructura Organizacional y Mesa Directiva</h2>
-        <p>Estructura modular diseñada para garantizar agilidad en la toma de decisiones y control riguroso de riesgos.</p>
+        <span class="badge badge-blue" data-i18n="gov_badge">Organización</span>
+        <h2 data-i18n="gov_title">Estructura Organizacional y Áreas Clave</h2>
+        <p data-i18n="gov_sub">Departamentos especializados para asegurar la ejecución contractual y la mitigación de riesgos.</p>
       </div>
 
       <div class="grid-3">
         <div class="glass-card" style="text-align:center;">
-          <div style="width:72px; height:72px; border-radius:var(--radius-full); background:rgba(229,169,60,0.15); border:2px solid var(--gold-500); display:flex; align-items:center; justify-content:center; margin:0 auto 1.2rem auto; color:var(--gold-400);">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <div style="width:64px; height:64px; border-radius:var(--radius-full); background:rgba(229,169,60,0.15); border:2px solid var(--gold-500); display:flex; align-items:center; justify-content:center; margin:0 auto 1.1rem auto; color:var(--gold-400);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
           </div>
-          <h4>Dirección Ejecutiva (CEO)</h4>
-          <span style="font-size:0.85rem; color:var(--gold-400); font-weight:600; display:block; margin-bottom:0.8rem;">Liderazgo Estratégico</span>
-          <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">
-            Supervisión integral de relaciones institucionales, acuerdos marco con refinerías y expansión en mercados emergentes.
+          <h4 data-i18n="gov_role1_title">Dirección General y Comercial</h4>
+          <span style="font-size:0.82rem; color:var(--gold-400); font-weight:600; display:block; margin-bottom:0.75rem;" data-i18n="gov_role1_sub">Liderazgo Estratégico</span>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;" data-i18n="gov_role1_desc">
+            Supervisión de acuerdos comerciales marco con refinerías, alianzas de fletamento y expansión regional.
           </p>
         </div>
 
         <div class="glass-card" style="text-align:center;">
-          <div style="width:72px; height:72px; border-radius:var(--radius-full); background:rgba(56,189,248,0.15); border:2px solid var(--blue-400); display:flex; align-items:center; justify-content:center; margin:0 auto 1.2rem auto; color:var(--blue-400);">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          <div style="width:64px; height:64px; border-radius:var(--radius-full); background:rgba(56,189,248,0.15); border:2px solid var(--blue-400); display:flex; align-items:center; justify-content:center; margin:0 auto 1.1rem auto; color:var(--blue-400);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
           </div>
-          <h4>Mesa de Trading &amp; Arbitraje</h4>
-          <span style="font-size:0.85rem; color:var(--blue-400); font-weight:600; display:block; margin-bottom:0.8rem;">Análisis de Mercado &amp; Precios</span>
-          <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">
-            Monitoreo continuo de diferenciales de crudo (Brent/WTI), márgenes de refinería y fijación de cobertura financiera (Hedging).
+          <h4 data-i18n="gov_role2_title">Departamento de Operaciones y Logística</h4>
+          <span style="font-size:0.82rem; color:var(--blue-400); font-weight:600; display:block; margin-bottom:0.75rem;" data-i18n="gov_role2_sub">Gestión Marítima y Puertos</span>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;" data-i18n="gov_role2_desc">
+            Coordinación de buques, ventanas de carga (laycan), inspecciones independientes y entregas de bunkering.
           </p>
         </div>
 
         <div class="glass-card" style="text-align:center;">
-          <div style="width:72px; height:72px; border-radius:var(--radius-full); background:rgba(16,185,129,0.15); border:2px solid var(--emerald-400); display:flex; align-items:center; justify-content:center; margin:0 auto 1.2rem auto; color:var(--emerald-400);">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <div style="width:64px; height:64px; border-radius:var(--radius-full); background:rgba(16,185,129,0.15); border:2px solid var(--emerald-400); display:flex; align-items:center; justify-content:center; margin:0 auto 1.1rem auto; color:var(--emerald-400);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
           </div>
-          <h4>Oficina de Cumplimiento &amp; Legal</h4>
-          <span style="font-size:0.85rem; color:var(--emerald-400); font-weight:600; display:block; margin-bottom:0.8rem;">KYC / AML / Sanctions</span>
-          <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">
-            Filtros estrictos de antecedentes, validación documental bancaria (SWIFT/MT799/MT760) y cumplimiento normativo en Panamá.
+          <h4 data-i18n="gov_role3_title">Oficina de Cumplimiento y Legal</h4>
+          <span style="font-size:0.82rem; color:var(--emerald-400); font-weight:600; display:block; margin-bottom:0.75rem;" data-i18n="gov_role3_sub">KYC / AML / Sanciones</span>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;" data-i18n="gov_role3_desc">
+            Revisión exhaustiva de contrapartes, verificación de origen de fondos y control de normativas internacionales.
           </p>
         </div>
       </div>
@@ -221,66 +230,66 @@
     <div class="container footer-top">
       <div class="footer-brand">
         <a href="index.html">
-          <img src="assets/images/logo.svg" alt="Petroganso Logo" width="220" height="42">
+          <img src="assets/images/logo.svg" alt="Petroganso Logo" width="200" height="40">
         </a>
-        <p>
-          Firma de trading y logística de hidrocarburos especializada en la compraventa de crudos y derivados refinados en las Américas y rutas marítimas globales.
+        <p data-i18n="footer_brand_desc">
+          Empresa de comercialización y logística de hidrocarburos especializada en la compra y venta mayorista de crudos y derivados refinados en las Américas.
         </p>
         <div class="footer-location-tag">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          <span>Ciudad de Panamá, República de Panamá</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span data-i18n="footer_loc">Ciudad de Panamá, República de Panamá</span>
         </div>
       </div>
 
       <div>
-        <h4 class="footer-title">Navegación</h4>
+        <h4 class="footer-title" data-i18n="footer_col_nav">Navegación</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Quiénes Somos</a></li>
-          <li><a href="productos.html">Productos &amp; Crudos</a></li>
-          <li><a href="operaciones.html">Operaciones &amp; Logística</a></li>
-          <li><a href="cumplimiento.html">Cumplimiento KYC / AML</a></li>
-          <li><a href="contacto.html">Mesa de Trading / RFQ</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+          <li><a href="nosotros.html" data-i18n="nav_about">Quiénes Somos</a></li>
+          <li><a href="productos.html" data-i18n="nav_products">Productos &amp; Crudos</a></li>
+          <li><a href="operaciones.html" data-i18n="nav_operations">Operaciones &amp; Logística</a></li>
+          <li><a href="cumplimiento.html" data-i18n="nav_compliance">Cumplimiento KYC / AML</a></li>
+          <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="footer-title">Materias Primas</h4>
+        <h4 class="footer-title" data-i18n="footer_col_prod">Productos Principales</h4>
         <ul class="footer-links">
-          <li><a href="productos.html#crudo">Petróleo Crudo Ligero</a></li>
-          <li><a href="productos.html#crudo">Petróleo Crudo Pesado</a></li>
-          <li><a href="productos.html#refinados">Diesel ULSD 10ppm</a></li>
-          <li><a href="productos.html#refinados">Jet Fuel A-1</a></li>
-          <li><a href="productos.html#bunkering">VLSFO 0.5% Marino</a></li>
-          <li><a href="productos.html#bunkering">Marine Gas Oil (MGO)</a></li>
+          <li><a href="productos.html#crudo" data-i18n="card_crude_title">Petróleo Crudo</a></li>
+          <li><a href="productos.html#refinados" data-i18n="card_refined_title">Diesel ULSD &amp; Refinados</a></li>
+          <li><a href="productos.html#bunkering" data-i18n="card_bunker_title">Bunkering Marino</a></li>
+          <li><a href="productos.html#jet" data-i18n="prod_jet_title">Turbosina Jet A-1</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="footer-title">Marco de Cumplimiento</h4>
+        <h4 class="footer-title" data-i18n="footer_col_comp">Marco Regulatorio</h4>
         <div class="footer-compliance-box">
-          <strong>Aviso Regulatorio:</strong>
-          Petroganso no sostiene relaciones comerciales con entidades, buques o jurisdicciones sancionadas por OFAC, Naciones Unidas o la Unión Europea. Toda contraparte debe superar el proceso de debida diligencia KYC/AML previo a la emisión de ofertas vinculantes.
+          <strong data-i18n="notice_title">Aviso de Cumplimiento:</strong>
+          <span data-i18n="footer_comp_text">Petroganso no efectúa operaciones con personas, entidades o buques sancionados por OFAC, la ONU o la UE. Toda relación comercial está sujeta al procedimiento previo de debida diligencia KYC/AML.</span>
         </div>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <div>
+      <div data-i18n="footer_copy">
         &copy; 2026 Petroganso Energy &amp; Commodities. Todos los derechos reservados.
       </div>
       <div class="footer-bottom-links">
-        <a href="cumplimiento.html#terminos">Términos Comerciales</a>
-        <a href="cumplimiento.html#privacidad">Política de Privacidad</a>
-        <a href="cumplimiento.html#kyc">Guía KYC</a>
+        <a href="cumplimiento.html#terminos" data-i18n="footer_terms">Términos Comerciales</a>
+        <a href="cumplimiento.html#privacidad" data-i18n="footer_privacy">Política de Privacidad</a>
+        <a href="cumplimiento.html#kyc" data-i18n="footer_kyc">Guía KYC</a>
       </div>
       <div class="cloudflare-badge">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
-        <span>Asegurado vía Cloudflare DNS &amp; SSL</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        <span data-i18n="footer_cloudflare">Asegurado vía Cloudflare DNS &amp; SSL</span>
       </div>
     </div>
   </footer>
 
+  <script src="js/translations.js"></script>
+  <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
