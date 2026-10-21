@@ -107,6 +107,9 @@ const translations = {
     'about_block1_desc': 'Aseguramiento del cargamento desde el puerto de origen, verificación de calidad en carga, y entrega puntual en el puerto convenido.',
     'about_block2_title': 'Cero Tolerancia',
     'about_block2_desc': 'Políticas intransigentes contra el lavado de activos, estricta verificación de listas de sanciones y total transparencia contractual.',
+    'about_video_badge_title': 'Tránsito & Logística en el Canal de Panamá',
+    'about_video_badge_sub': 'Suministro y Transporte de Hidrocarburos • Conexión Interoceánica',
+    'about_video_live': 'Ruta Activa',
     
     // Mission Vision Values
     'pillar_badge': 'Principios Corporativos',
@@ -374,6 +377,9 @@ const translations = {
     'about_block1_desc': 'Cargo custody verification from port of origin, rigorous load inspection, and punctual discharge at the designated destination.',
     'about_block2_title': 'Zero Tolerance',
     'about_block2_desc': 'Uncompromising adherence to anti-money laundering frameworks, comprehensive sanctions screening, and transparent contractual terms.',
+    'about_video_badge_title': 'Panama Canal Transit & Maritime Logistics',
+    'about_video_badge_sub': 'Bulk Hydrocarbon Transport & Supply • Interoceanic Link',
+    'about_video_live': 'Active Route',
 
     // Mission Vision Values
     'pillar_badge': 'Corporate Pillars',

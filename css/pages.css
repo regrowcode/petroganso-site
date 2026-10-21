@@ -142,15 +142,97 @@
   min-height: 380px;
 }
 
-.hub-visual-card img {
+.hub-visual-card img,
+.hub-visual-card video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-slow);
+  display: block;
 }
 
 .hub-visual-card:hover img {
   transform: scale(1.03);
+}
+
+.video-container {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-subtle);
+  height: 100%;
+  min-height: 400px;
+  background: #03060C;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 16, 30, 0.1) 0%, rgba(5, 11, 20, 0.75) 100%);
+  pointer-events: none;
+}
+
+.video-play-btn {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  background: rgba(7, 16, 30, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-subtle);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 10;
+}
+
+.video-play-btn:hover {
+  background: var(--gold-500);
+  color: #07101E;
+  transform: scale(1.08);
+}
+
+.live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  color: var(--emerald-400);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+}
+
+.live-pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--emerald-400);
+  box-shadow: 0 0 8px var(--emerald-400);
+  animation: pulse-dot 1.8s infinite;
+}
+
+@keyframes pulse-dot {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
 }
 
 .hub-badge-float {
@@ -163,6 +245,7 @@
   padding: 1.1rem 1.4rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
+  z-index: 5;
 }
 
 .hub-points {

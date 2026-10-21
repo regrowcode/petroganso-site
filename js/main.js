@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMarketTicker();
   initProductTabs();
   initScrollAnimations();
+  initVideoControls();
 });
 
 /* --------------------------------------------------------------------------
@@ -135,8 +136,35 @@ function initScrollAnimations() {
     });
   }, { threshold: 0.12 });
 
-  document.querySelectorAll('.glass-card, .compliance-card, .hub-visual-card').forEach(el => {
+  document.querySelectorAll('.glass-card, .compliance-card, .hub-visual-card, .video-container').forEach(el => {
     el.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
     observer.observe(el);
   });
 }
+
+/* --------------------------------------------------------------------------
+   INTERACTIVE VIDEO CONTROLS
+   -------------------------------------------------------------------------- */
+function initVideoControls() {
+  const video = document.getElementById('logisticsVideo');
+  const btn = document.getElementById('btnToggleVideo');
+  const iconPause = document.getElementById('iconPause');
+  const iconPlay = document.getElementById('iconPlay');
+
+  if (!video || !btn) return;
+
+  btn.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      if (iconPause) iconPause.style.display = 'block';
+      if (iconPlay) iconPlay.style.display = 'none';
+      btn.setAttribute('aria-label', 'Pausar Video');
+    } else {
+      video.pause();
+      if (iconPause) iconPause.style.display = 'none';
+      if (iconPlay) iconPlay.style.display = 'block';
+      btn.setAttribute('aria-label', 'Reproducir Video');
+    }
+  });
+}
+

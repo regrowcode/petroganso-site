@@ -48,11 +48,6 @@
           <span class="lang-divider">|</span>
           <button type="button" class="lang-btn" data-lang="en">EN</button>
         </div>
-
-        <a href="contacto.html" class="btn btn-primary">
-          <span data-i18n="nav_cta">Solicitar Suministro</span>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </a>
       </div>
 
       <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
@@ -119,11 +114,33 @@
           </div>
         </div>
 
-        <div class="hub-visual-card">
-          <img src="assets/images/trading-desk.jpg" alt="Oficinas Comerciales Petroganso en Ciudad de Panamá" width="600" height="400">
+        <!-- Video: Tránsito y Logística en el Canal de Panamá -->
+        <div class="video-container" id="logisticsVideoWrap">
+          <video id="logisticsVideo" autoplay muted loop playsinline preload="auto" poster="assets/images/bunkering-canal.jpg">
+            <source src="assets/videos/panama-transit-hd.webm" type="video/webm">
+            <source src="assets/videos/panama-transit.webm" type="video/webm">
+            Tu navegador no soporta video HTML5.
+          </video>
+          <div class="video-overlay-gradient"></div>
+
+          <button type="button" class="video-play-btn" id="btnToggleVideo" aria-label="Pausar o Reproducir Video">
+            <svg id="iconPause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+            <svg id="iconPlay" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </button>
+
           <div class="hub-badge-float">
-            <strong style="color:#FFFFFF; display:block;">Oficinas Comerciales &amp; Gestión Logística</strong>
-            <span style="font-size:0.82rem; color:var(--text-muted);">Ciudad de Panamá • Monitoreo de Rutas de Hidrocarburos</span>
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.35rem; gap:0.8rem;">
+              <strong style="color:#FFFFFF; font-size:0.96rem; display:block;" data-i18n="about_video_badge_title">
+                Tránsito &amp; Logística en el Canal de Panamá
+              </strong>
+              <span class="live-indicator">
+                <span class="live-pulse-dot"></span>
+                <span data-i18n="about_video_live">Ruta Activa</span>
+              </span>
+            </div>
+            <span style="font-size:0.82rem; color:var(--text-muted); display:block;" data-i18n="about_video_badge_sub">
+              Suministro y Transporte de Hidrocarburos • Conexión Interoceánica
+            </span>
           </div>
         </div>
       </div>
