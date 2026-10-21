@@ -259,6 +259,8 @@ const translations = {
     'form_calc_mt': 'Toneladas Métricas Est.',
     'form_calc_bbl': 'Barriles Estimados',
     'form_calc_vessel': 'Buque Recomendado',
+    'rfq_calc_title': 'Estimación Preliminar de Carga',
+    'rfq_calc_auto': 'Cálculo en Tiempo Real',
     'form_btn_submit': 'Enviar Solicitud al Departamento Comercial',
 
     // Footer
@@ -529,6 +531,8 @@ const translations = {
     'form_calc_mt': 'Estimated Metric Tonnes',
     'form_calc_bbl': 'Estimated Barrels',
     'form_calc_vessel': 'Suggested Tanker Class',
+    'rfq_calc_title': 'Preliminary Cargo Estimation',
+    'rfq_calc_auto': 'Real-time Calculation',
     'form_btn_submit': 'Submit Request to Commercial Department',
 
     // Footer

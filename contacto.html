@@ -79,10 +79,10 @@
        ========================================================================= -->
   <section class="section" style="padding-top:2.8rem;" id="mesa-rfq">
     <div class="container">
-      <div class="grid-2" style="gap:3rem; align-items:flex-start;">
+      <div class="contact-layout-grid">
 
         <!-- Left: Contact Details & Panama Presence -->
-        <div>
+        <div class="contact-details-col">
           <span class="badge badge-blue" data-i18n="contact_card_title">Presencia en Ciudad de Panamá</span>
           <h2 style="margin: 0.9rem 0 1.1rem 0;" data-i18n="contact_card_title">Presencia en Ciudad de Panamá</h2>
           <p data-i18n="contact_card_desc">
@@ -200,17 +200,19 @@
                 </select>
               </div>
 
-              <div class="form-group">
-                <label class="form-label" for="rfqVolume" data-i18n="form_lbl_volume">Volumen Requerido *</label>
-                <input type="number" id="rfqVolume" class="form-control" placeholder="100000" min="5000" value="100000" required>
-              </div>
+              <div class="form-group-row full">
+                <div class="form-group">
+                  <label class="form-label" for="rfqVolume" data-i18n="form_lbl_volume">Volumen Requerido *</label>
+                  <input type="number" id="rfqVolume" class="form-control" placeholder="100000" min="5000" value="100000" required>
+                </div>
 
-              <div class="form-group">
-                <label class="form-label" for="rfqUnit" data-i18n="form_lbl_unit">Unidad de Medida *</label>
-                <select id="rfqUnit" class="form-control" required>
-                  <option value="bbl">Barriles (BBL)</option>
-                  <option value="mt">Toneladas Métricas (MT)</option>
-                </select>
+                <div class="form-group">
+                  <label class="form-label" for="rfqUnit" data-i18n="form_lbl_unit">Unidad de Medida *</label>
+                  <select id="rfqUnit" class="form-control" required>
+                    <option value="bbl">Barriles (BBL)</option>
+                    <option value="mt">Toneladas Métricas (MT)</option>
+                  </select>
+                </div>
               </div>
 
               <div class="form-group full">
@@ -224,23 +226,35 @@
               </div>
             </div>
 
-            <!-- Dynamic Live Estimator Box (Balanced 3-column grid) -->
+            <!-- Dynamic Live Estimator Box (High-tech Readout Terminal) -->
             <div class="rfq-calculation-box">
-              <div class="rfq-calc-item">
-                <span class="calc-label" data-i18n="form_calc_mt">Toneladas Métricas Est.</span>
-                <span class="calc-val" id="calcCargoMt">-- MT</span>
+              <div class="rfq-calc-header">
+                <span class="rfq-calc-header-title">
+                  <span class="live-pulse-dot"></span>
+                  <span data-i18n="rfq_calc_title">Estimación Preliminar de Carga</span>
+                </span>
+                <span class="rfq-calc-badge" data-i18n="rfq_calc_auto">Cálculo en Tiempo Real</span>
               </div>
-              <div class="rfq-calc-item">
-                <span class="calc-label" data-i18n="form_calc_bbl">Barriles Estimados</span>
-                <span class="calc-val" id="calcEstBbl">-- BBL</span>
+              <div class="rfq-calc-body">
+                <div class="rfq-calc-card">
+                  <span class="calc-label" data-i18n="form_calc_mt">Toneladas Métricas Est.</span>
+                  <span class="calc-val" id="calcCargoMt">-- MT</span>
+                </div>
+                <div class="rfq-calc-card">
+                  <span class="calc-label" data-i18n="form_calc_bbl">Barriles Estimados</span>
+                  <span class="calc-val" id="calcEstBbl">-- BBL</span>
+                </div>
               </div>
-              <div class="rfq-calc-item">
-                <span class="calc-label" data-i18n="form_calc_vessel">Buque Recomendado</span>
-                <span class="calc-val" id="calcVesselClass" style="font-size:0.98rem; color:#FFFFFF;">--</span>
+              <div class="rfq-calc-vessel-row">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"></path><path d="M4 18l2-9h12l2 9"></path><path d="M12 4v5"></path></svg>
+                <div class="rfq-calc-vessel-info">
+                  <span class="vessel-label" data-i18n="form_calc_vessel">Clase de Buque Recomendada</span>
+                  <span class="vessel-val" id="calcVesselClass">--</span>
+                </div>
               </div>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;" id="btnSubmitRfq">
+            <button type="submit" class="btn btn-primary btn-lg btn-submit-rfq" style="width:100%;" id="btnSubmitRfq">
               <span data-i18n="form_btn_submit">Enviar Solicitud al Departamento Comercial</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
             </button>
