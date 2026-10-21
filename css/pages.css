@@ -1,0 +1,580 @@
+/* ==========================================================================
+   PETROGANSO - PAGE SPECIFIC STYLES & INTERACTIVE MODULES
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   HOME HERO SECTION
+   -------------------------------------------------------------------------- */
+.hero-home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  background: #050B14;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('../assets/images/hero-tanker.jpg') center center / cover no-repeat;
+  transform: scale(1.04);
+  transition: transform 12s ease-out;
+  z-index: 1;
+}
+
+.hero-home:hover .hero-bg {
+  transform: scale(1.0);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 11, 20, 0.96) 0%,
+    rgba(7, 16, 30, 0.85) 45%,
+    rgba(5, 11, 20, 0.65) 100%
+  );
+  z-index: 2;
+}
+
+.hero-overlay-radial {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 40%, rgba(229, 169, 60, 0.08) 0%, transparent 60%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 820px;
+}
+
+.hero-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.6rem;
+  color: #FFFFFF;
+}
+
+.hero-title .text-gold {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.hero-lead {
+  font-size: 1.25rem;
+  color: #E2E8F0;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+  max-width: 680px;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+/* Floating stats strip at hero bottom */
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.stat-item .stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.stat-item .stat-number .accent {
+  color: var(--gold-400);
+}
+
+.stat-item .stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* --------------------------------------------------------------------------
+   STRATEGIC ADVANTAGE / PANAMA HUB
+   -------------------------------------------------------------------------- */
+.hub-visual-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-subtle);
+}
+
+.hub-visual-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.hub-visual-card:hover img {
+  transform: scale(1.04);
+}
+
+.hub-badge-float {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  background: rgba(7, 16, 30, 0.88);
+  backdrop-filter: blur(12px);
+  padding: 1.2rem 1.6rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.hub-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.hub-point {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.hub-point-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: rgba(229, 169, 60, 0.12);
+  border: 1px solid rgba(229, 169, 60, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-400);
+  flex-shrink: 0;
+}
+
+.hub-point-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.hub-point-text h4 {
+  color: #FFFFFF;
+  margin-bottom: 0.35rem;
+}
+
+.hub-point-text p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   PRODUCT TABS & TECHNICAL CARDS
+   -------------------------------------------------------------------------- */
+.product-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.tab-btn:hover {
+  border-color: rgba(229, 169, 60, 0.4);
+  color: #FFFFFF;
+}
+
+.tab-btn.active {
+  background: var(--gold-gradient);
+  color: #07101E;
+  border-color: transparent;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(229, 169, 60, 0.3);
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.product-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-400);
+}
+
+.product-icon-wrap.gold {
+  background: rgba(229, 169, 60, 0.1);
+  border-color: rgba(229, 169, 60, 0.25);
+  color: var(--gold-400);
+}
+
+.product-card h3 {
+  color: #FFFFFF;
+  margin-bottom: 0.6rem;
+}
+
+.product-card .product-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.4rem;
+  flex-grow: 1;
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.spec-table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.spec-table tr:last-child {
+  border-bottom: none;
+}
+
+.spec-table td {
+  padding: 0.5rem 0;
+}
+
+.spec-table .spec-name {
+  color: var(--text-muted);
+}
+
+.spec-table .spec-val {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: right;
+  font-family: var(--font-heading);
+}
+
+.product-footer-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.incoterm-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.04em;
+}
+
+/* --------------------------------------------------------------------------
+   COMPLIANCE & RISK MANAGEMENT
+   -------------------------------------------------------------------------- */
+.compliance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.compliance-card {
+  padding: 2.2rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  transition: all var(--transition-normal);
+}
+
+.compliance-card:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-blue);
+}
+
+.compliance-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--blue-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.compliance-card h3 {
+  margin-bottom: 0.8rem;
+  color: #FFFFFF;
+}
+
+.compliance-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.compliance-checklist {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.compliance-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: #E2E8F0;
+}
+
+.compliance-checklist li svg {
+  color: var(--emerald-400);
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   RFQ TRADING DESK FORM
+   -------------------------------------------------------------------------- */
+.rfq-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.form-label {
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.form-control {
+  background: rgba(7, 16, 30, 0.8);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.1rem;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+  border-color: var(--gold-500);
+  box-shadow: 0 0 0 3px rgba(229, 169, 60, 0.15);
+  background: rgba(7, 16, 30, 0.95);
+}
+
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394A3B8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.1rem center;
+  padding-right: 2.8rem;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.rfq-calculation-box {
+  background: rgba(13, 27, 42, 0.85);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.rfq-calc-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.rfq-calc-item .calc-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.rfq-calc-item .calc-val {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--gold-400);
+}
+
+.form-status-msg {
+  padding: 1.2rem;
+  border-radius: var(--radius-sm);
+  display: none;
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.form-status-msg.success {
+  display: block;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: var(--emerald-400);
+}
+
+/* --------------------------------------------------------------------------
+   CONTACT INFO CARDS
+   -------------------------------------------------------------------------- */
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-card-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast);
+}
+
+.contact-card-item:hover {
+  border-color: rgba(229, 169, 60, 0.35);
+}
+
+.contact-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: rgba(229, 169, 60, 0.12);
+  color: var(--gold-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-card-text h4 {
+  color: #FFFFFF;
+  margin-bottom: 0.25rem;
+}
+
+.contact-card-text p {
+  font-size: 0.92rem;
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .compliance-grid {
+    grid-template-columns: 1fr;
+  }
+  .rfq-card {
+    padding: 2rem 1.5rem;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-group.full {
+    grid-column: span 1;
+  }
+}

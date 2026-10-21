@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Productos y Crudos | Petroganso Energy • Panamá</title>
+  <meta name="description" content="Especificaciones técnicas y grados de petróleo crudo ligero y pesado, Diesel ULSD 10ppm, Jet A-1, combustibles marinos VLSFO y MGO para entrega FOB y CIF.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       HEADER & NAVIGATION
+       ========================================================================= -->
+  <div class="header-wrapper">
+    <div class="ticker-bar" aria-label="Indicadores de Mercado Energético">
+      <div class="container ticker-wrap">
+        <div class="ticker-label">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+          MERCADOS EN VIVO
+        </div>
+        <div class="ticker-scroll"></div>
+      </div>
+    </div>
+
+    <header class="navbar container">
+      <a href="index.html" class="brand-logo" aria-label="Petroganso Inicio">
+        <img src="assets/images/logo.svg" alt="Petroganso Energy & Commodities" width="220" height="42">
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="nosotros.html" class="nav-link">Quiénes Somos</a>
+        <a href="productos.html" class="nav-link active">Productos &amp; Crudos</a>
+        <a href="operaciones.html" class="nav-link">Operaciones &amp; Logística</a>
+        <a href="cumplimiento.html" class="nav-link">Cumplimiento &amp; ESG</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contacto.html" class="btn btn-primary">
+          <span>Mesa de Trading / RFQ</span>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </header>
+  </div>
+
+  <!-- =========================================================================
+       INNER PAGE HERO
+       ========================================================================= -->
+  <section class="inner-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span class="sep">/</span>
+        <span class="current">Productos &amp; Crudos</span>
+      </div>
+      <span class="badge badge-gold">Commodities Físicos</span>
+      <h1 style="margin: 0.8rem 0 1rem 0;">Catálogo de Crudos y Derivados Refinados</h1>
+      <p class="lead" style="max-width: 740px;">
+        Suministro estructurado bajo contratos spot y a largo plazo (term contracts). Especificaciones técnicas sujetas a verificación independiente por laboratorios Saybolt, SGS o Intertek.
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PRODUCT FILTER TABS & CARDS
+       ========================================================================= -->
+  <section class="section" style="padding-top:3.5rem;">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="product-tabs" role="tablist">
+        <button class="tab-btn active" data-category="all" role="tab" id="tabAll">Todos los Productos</button>
+        <button class="tab-btn" data-category="crudo" role="tab" id="tabCrudo">Petróleo Crudo</button>
+        <button class="tab-btn" data-category="refinados" role="tab" id="tabRefinados">Destilados &amp; Refinados</button>
+        <button class="tab-btn" data-category="bunkering" role="tab" id="tabBunkering">Bunkering Marino</button>
+        <button class="tab-btn" data-category="petroquimicos" role="tab" id="tabPetroquimicos">Naftas &amp; Especiales</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid-3" id="productsGrid">
+
+        <!-- 1. Crudo Ligero Dulce -->
+        <div class="glass-card product-card product-card-item" data-category="crudo" id="crudo">
+          <div class="product-card-header">
+            <div class="product-icon-wrap gold">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+            </div>
+            <span class="badge badge-gold">Crudo Liviano</span>
+          </div>
+          <h3>Light Sweet Crude Oil</h3>
+          <p class="product-desc">
+            Crudo de alta gravedad API y bajo tenor de azufre, idóneo para refinerías que buscan maximizar el rendimiento de gasolina de alto octanaje y destilados medios de bajo azufre.
+          </p>
+          <table class="spec-table">
+            <tr><td class="spec-name">Gravedad API</td><td class="spec-val">38.0° – 42.5°</td></tr>
+            <tr><td class="spec-name">Contenido de Azufre</td><td class="spec-val">&lt; 0.42 % wt</td></tr>
+            <tr><td class="spec-name">Punto de Fluidez</td><td class="spec-val">&lt; -15 °C</td></tr>
+            <tr><td class="spec-name">Viscosidad cinemática</td><td class="spec-val">4.5 cSt @ 20°C</td></tr>
+            <tr><td class="spec-name">Inspección de Calidad</td><td class="spec-val">ASTM / SGS</td></tr>
+          </table>
+          <div class="product-footer-tags">
+            <span class="incoterm-tag">FOB</span>
+            <span class="incoterm-tag">CIF</span>
+            <span class="incoterm-tag">TTT</span>
+            <span class="incoterm-tag">Parciales Aframax / VLCC</span>
+          </div>
+        </div>
+
+        <!-- 2. Crudo Pesado Agrio -->
+        <div class="glass-card product-card product-card-item" data-category="crudo">
+          <div class="product-card-header">
+            <div class="product-icon-wrap gold">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
+            <span class="badge badge-gold">Crudo Pesado</span>
+          </div>
+          <h3>Heavy Sour Crude Oil</h3>
+          <p class="product-desc">
+            Crudo pesado con alto rendimiento de fuel oil y componentes para unidades de coquizador retardado (delayed coker) y craqueo catalítico en refinerías de alta conversión.
+          </p>
+          <table class="spec-table">
+            <tr><td class="spec-name">Gravedad API</td><td class="spec-val">20.5° – 24.0°</td></tr>
+            <tr><td class="spec-name">Contenido de Azufre</td><td class="spec-val">2.30% – 3.10% wt</td></tr>
+            <tr><td class="spec-name">Número de Ácido (TAN)</td><td class="spec-val">&lt; 0.95 mg KOH/g</td></tr>
+            <tr><td class="spec-name">Sedimento y Agua (BS&amp;W)</td><td class="spec-val">&lt; 0.50% vol</td></tr>
+            <tr><td class="spec-name">Inspección de Calidad</td><td class="spec-val">ASTM / Saybolt</td></tr>
+          </table>
+          <div class="product-footer-tags">
+            <span class="incoterm-tag">FOB</span>
+            <span class="incoterm-tag">CIF</span>
+            <span class="incoterm-tag">CFR</span>
+            <span class="incoterm-tag">Suezmax / VLCC</span>
+          </div>
+        </div>
+
+        <!-- 3. Diesel ULSD 10ppm -->
+        <div class="glass-card product-card product-card-item" data-category="refinados" id="refinados">
+          <div class="product-card-header">
+            <div class="product-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <span class="badge badge-blue">Destilados Medios</span>
+          </div>
+          <h3>Diesel ULSD 10 ppm (EN 590)</h3>
+          <p class="product-desc">
+            Combustible de máxima pureza para motores de transporte automotor e industrial. Cumple con las especificaciones europeas EN 590 y estadounidenses ASTM D975 Grade 2-D S15.
+          </p>
+          <table class="spec-table">
+            <tr><td class="spec-name">Azufre Máximo</td><td class="spec-val">&le; 10 mg/kg (ppm)</td></tr>
+            <tr><td class="spec-name">Índice / Nº de Cetano</td><td class="spec-val">&ge; 51.0</td></tr>
+            <tr><td class="spec-name">Densidad @ 15°C</td><td class="spec-val">820 – 845 kg/m³</td></tr>
+            <tr><td class="spec-name">Punto de Inflamación</td><td class="spec-val">&gt; 55.0 °C</td></tr>
+            <tr><td class="spec-name">Punto de Obstrucción (CFPP)</td><td class="spec-val">Estacional (-5°C a -15°C)</td></tr>
+          </table>
+          <div class="product-footer-tags">
+            <span class="incoterm-tag">FOB</span>
+            <span class="incoterm-tag">CIF</span>
+            <span class="incoterm-tag">MR Tanker (30k-45k MT)</span>
+          </div>
+        </div>
+
+        <!-- 4. Jet Fuel A-1 -->
+        <div class="glass-card product-card product-card-item" data-category="refinados">
+          <div class="product-card-header">
+            <div class="product-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"></path></svg>
+            </div>
+            <span class="badge badge-blue">Aviación Comercial</span>
+          </div>
+          <h3>Aviation Kerosene Jet A-1</h3>
+          <p class="product-desc">
+            Turbosina para turbinas de aviación comercial e internacional, certificada rigurosamente bajo el estándar global ASTM D1655 y UK DEF STAN 91-091 con aditivo estático.
+          </p>
+          <table class="spec-table">
+            <tr><td class="spec-name">Punto de Congelación</td><td class="spec-val">&le; -47.0 °C</td></tr>
+            <tr><td class="spec-name">Punto de Inflamación</td><td class="spec-val">&ge; 38.0 °C</td></tr>
+            <tr><td class="spec-name">Densidad @ 15°C</td><td class="spec-val">775 – 840 kg/m³</td></tr>
+            <tr><td class="spec-name">Conductividad Eléctrica</td><td class="spec-val">50 – 600 pS/m</td></tr>
+            <tr><td class="spec-name">Contenido Total de Azufre</td><td class="spec-val">&le; 0.25% mass</td></tr>
+          </table>
+          <div class="product-footer-tags">
+            <span class="incoterm-tag">FOB</span>
+            <span class="incoterm-tag">CIF</span>
+            <span class="incoterm-tag">Certificación Joint Fuelling</span>
+          </div>
+        </div>
+
+        <!-- 5. Bunkering VLSFO 0.5% -->
+        <div class="glass-card product-card product-card-item" data-category="bunkering" id="bunkering">
+          <div class="product-card-header">
+            <div class="product-icon-wrap gold">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1 2.4 2.4 0 0 1 2-1 2.4 2.4 0 0 1 2 1 2.4 2.4 0 0 0 2 1 2.4 2.4 0 0 0 2-1"></path><path d="M4 18l2-9h12l2 9"></path><path d="M12 4v5"></path></svg>
+            </div>
+            <span class="badge badge-gold">Combustible Marino</span>
+          </div>
+          <h3>Very Low Sulfur Fuel Oil (VLSFO)</h3>
+          <p class="product-desc">
+            Fuel oil marino de muy bajo azufre conforme a las normativas de emisiones OMI (IMO 2020 MARPOL Anexo VI) para suministro directo en fondeaderos del Canal de Panamá.
+          </p>
+          <table class="spec-table">
+            <tr><td class="spec-name">Contenido de Azufre</td><td class="spec-val">&le; 0.50 % mass</td></tr>
+            <tr><td class="spec-name">Viscosidad @ 50°C</td><td class="spec-val">Hasta 380 mm²/s</td></tr>
+            <tr><td class="spec-name">Densidad @ 15°C</td><td class="spec-val">&le; 991.0 kg/m³</td></tr>
+            <tr><td class="spec-name">Punto de Inflamación</td><td class="spec-val">&ge; 60.0 °C</td></tr>
+            <tr><td class="spec-name">Norma de Referencia</td><td class="spec-val">ISO 8217:2024 RMG</td></tr>
+          </table>
+          <div class="product-footer-tags">
+            <span class="incoterm-tag">Barge Delivery</span>
+            <span class="incoterm-tag">Balboa Anchorage</span>
+            <span class="incoterm-tag">Cristóbal Anchorage</span>
+          </div>
+        </div>
+
+        <!-- 6. Marine Gas Oil (MGO DMA) -->
+        <div class="glass-card product-card product-card-item" data-category="bunkering">
+          <div class="product-card-header">
+            <div class="product-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <span class="badge badge-blue">Destilado Marino</span>
+          </div>
+          <h3>Marine Gas Oil 0.1% (MGO DMA)</h3>
+          <p class="product-desc">
+            Gasóleo marino puro y destilado para zonas de control de emisiones (ECA). Apto para generadores auxiliares de buques portacontenedores, graneleros y cruceros.
+          </p>
+          <table class="spec-table">
+            <tr><td class="spec-name">Contenido de Azufre</td><td class="spec-val">&le; 0.10 % mass (1000 ppm)</td></tr>
+            <tr><td class="spec-name">Viscosidad @ 40°C</td><td class="spec-val">2.00 – 6.00 mm²/s</td></tr>
+            <tr><td class="spec-name">Punto de Inflamación</td><td class="spec-val">&ge; 60.0 °C</td></tr>
+            <tr><td class="spec-name">Densidad @ 15°C</td><td class="spec-val">&le; 890.0 kg/m³</td></tr>
+            <tr><td class="spec-name">Norma de Referencia</td><td class="spec-val">ISO 8217:2024 DMA</td></tr>
+          </table>
+          <div class="product-footer-tags">
+            <span class="incoterm-tag">ECA Compliant</span>
+            <span class="incoterm-tag">Suministro Ex-Pipe / Barge</span>
+          </div>
+        </div>
+
+        <!-- 7. Gasolina Regular & Premium -->
+        <div class="glass-card product-card product-card-item" data-category="refinados">
+          <div class="product-card-header">
+            <div class="product-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+            <span class="badge badge-blue">Combustibles Ligeros</span>
+          </div>
+          <h3>Motor Gasoline (Mogas 91 &amp; 95 RON)</h3>
+          <p class="product-desc">
+            Gasolinas automotrices terminadas y bases de blending (BOB) con aditivos detergentes e inhibidores de corrosión según normas EN 228 / ASTM D4814.
+          </p>
+          <table class="spec-table">
+            <tr><td class="spec-name">Número de Octano (RON)</td><td class="spec-val">91.0 / 95.0 mín.</td></tr>
+            <tr><td class="spec-name">Número de Octano Motor (MON)</td><td class="spec-val">82.5 / 85.0 mín.</td></tr>
+            <tr><td class="spec-name">Presión de Vapor Reid (RVP)</td><td class="spec-val">60 – 90 kPa</td></tr>
+            <tr><td class="spec-name">Benceno en volumen</td><td class="spec-val">&le; 1.0 % vol</td></tr>
+            <tr><td class="spec-name">Contenido de Plomo</td><td class="spec-val">Libre (&lt; 0.005 g/l)</td></tr>
+          </table>
+          <div class="product-footer-tags">
+            <span class="incoterm-tag">FOB</span>
+            <span class="incoterm-tag">CIF</span>
+            <span class="incoterm-tag">Blending Customizado</span>
+          </div>
+        </div>
+
+        <!-- 8. Nafta Química y de Refinación -->
+        <div class="glass-card product-card product-card-item" data-category="petroquimicos">
+          <div class="product-card-header">
+            <div class="product-icon-wrap gold">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <span class="badge badge-gold">Petroquímica</span>
+          </div>
+          <h3>Light &amp; Heavy Virgin Naphtha</h3>
+          <p class="product-desc">
+            Materia prima esencial para plantas de craqueo por vapor (steam crackers) en la síntesis de olefinas (etileno, propileno) y unidades de reformación catalítica.
+          </p>
+          <table class="spec-table">
+            <tr><td class="spec-name">Rango de Destilación</td><td class="spec-val">35 °C – 185 °C</td></tr>
+            <tr><td class="spec-name">Contenido Parafínico</td><td class="spec-val">&gt; 65.0 % wt</td></tr>
+            <tr><td class="spec-name">Densidad @ 15°C</td><td class="spec-val">0.680 – 0.740 kg/l</td></tr>
+            <tr><td class="spec-name">Azufre Total</td><td class="spec-val">&lt; 350 ppm</td></tr>
+            <tr><td class="spec-name">Análisis PONA</td><td class="spec-val">Disponible en COA</td></tr>
+          </table>
+          <div class="product-footer-tags">
+            <span class="incoterm-tag">FOB</span>
+            <span class="incoterm-tag">CIF</span>
+            <span class="incoterm-tag">Cargamento Bulk</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       STANDARD TRADING & PROCEDURES PIPELINE
+       ========================================================================= -->
+  <section class="section section-darker">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-blue">Procedimiento Comercial</span>
+        <h2>Flujo Operativo de Contratación Estándar</h2>
+        <p>Garantizamos transparencia y seguridad jurídica a través de protocolos internacionales validados.</p>
+      </div>
+
+      <div class="grid-4">
+        <div class="glass-card" style="padding:1.8rem;">
+          <div style="font-size:2rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.8rem;">01</div>
+          <h4 style="color:#FFFFFF; margin-bottom:0.5rem;">Solicitud &amp; KYC</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
+            El comprador remite su ICPO / RFQ formal junto a su ficha de debida diligencia de contraparte (CIS/KYC).
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding:1.8rem;">
+          <div style="font-size:2rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.8rem;">02</div>
+          <h4 style="color:#FFFFFF; margin-bottom:0.5rem;">Oferta Corporativa</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
+            Petroganso emite la FCO (Full Corporate Offer) y borrador del contrato de compraventa (SPA) con especificaciones acordadas.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding:1.8rem;">
+          <div style="font-size:2rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.8rem;">03</div>
+          <h4 style="color:#FFFFFF; margin-bottom:0.5rem;">Garantía Financiera</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
+            Apertura de instrumento bancario de primer nivel (DLC irrevocable o SBLC confirmada) vía SWIFT MT760/MT700.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding:1.8rem;">
+          <div style="font-size:2rem; font-family:var(--font-heading); font-weight:900; color:var(--gold-400); margin-bottom:0.8rem;">04</div>
+          <h4 style="color:#FFFFFF; margin-bottom:0.5rem;">Carga &amp; Inspección</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
+            Inspección por Saybolt/SGS en puerto de carga, emisión de Conocimiento de Embarque (Bill of Lading) y despacho.
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:3.5rem;">
+        <a href="contacto.html" class="btn btn-primary btn-lg">Solicitar Cotización para su Refinería o Flota</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INSTITUTIONAL FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html">
+          <img src="assets/images/logo.svg" alt="Petroganso Logo" width="220" height="42">
+        </a>
+        <p>
+          Firma de trading y logística de hidrocarburos especializada en la compraventa de crudos y derivados refinados en las Américas y rutas marítimas globales.
+        </p>
+        <div class="footer-location-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Ciudad de Panamá, República de Panamá</span>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Quiénes Somos</a></li>
+          <li><a href="productos.html">Productos &amp; Crudos</a></li>
+          <li><a href="operaciones.html">Operaciones &amp; Logística</a></li>
+          <li><a href="cumplimiento.html">Cumplimiento KYC / AML</a></li>
+          <li><a href="contacto.html">Mesa de Trading / RFQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Materias Primas</h4>
+        <ul class="footer-links">
+          <li><a href="productos.html#crudo">Petróleo Crudo Ligero</a></li>
+          <li><a href="productos.html#crudo">Petróleo Crudo Pesado</a></li>
+          <li><a href="productos.html#refinados">Diesel ULSD 10ppm</a></li>
+          <li><a href="productos.html#refinados">Jet Fuel A-1</a></li>
+          <li><a href="productos.html#bunkering">VLSFO 0.5% Marino</a></li>
+          <li><a href="productos.html#bunkering">Marine Gas Oil (MGO)</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Marco de Cumplimiento</h4>
+        <div class="footer-compliance-box">
+          <strong>Aviso Regulatorio:</strong>
+          Petroganso no sostiene relaciones comerciales con entidades, buques o jurisdicciones sancionadas por OFAC, Naciones Unidas o la Unión Europea. Toda contraparte debe superar el proceso de debida diligencia KYC/AML previo a la emisión de ofertas vinculantes.
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>
+        &copy; 2026 Petroganso Energy &amp; Commodities. Todos los derechos reservados.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="cumplimiento.html#terminos">Términos Comerciales</a>
+        <a href="cumplimiento.html#privacidad">Política de Privacidad</a>
+        <a href="cumplimiento.html#kyc">Guía KYC</a>
+      </div>
+      <div class="cloudflare-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        <span>Asegurado vía Cloudflare DNS &amp; SSL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

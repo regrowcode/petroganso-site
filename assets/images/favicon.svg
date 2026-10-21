@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9D423" />
+      <stop offset="50%" stop-color="#E5A93C" />
+      <stop offset="100%" stop-color="#C68212" />
+    </linearGradient>
+    <linearGradient id="favBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <rect id="bg" width="80" height="80" rx="18" fill="#07101E"/>
+  </defs>
+  <use href="#bg"/>
+  <rect width="78" height="78" x="1" y="1" rx="17" stroke="#1E293B" stroke-width="2" fill="none"/>
+  <path d="M 40 10 C 56 20, 68 34, 70 52 C 72 68, 60 76, 44 78 C 58 70, 62 55, 54 42 C 48 32, 41 22, 40 10 Z" fill="url(#favGold)" />
+  <path d="M 32 20 C 44 29, 52 42, 52 57 C 52 69, 42 77, 30 78 C 40 71, 44 58, 38 47 C 34 38, 30 28, 32 20 Z" fill="url(#favGold)" opacity="0.85" />
+  <path d="M 24 37 C 32 46, 36 55, 36 64 C 36 74, 28 80, 20 80 C 12 80, 4 74, 4 64 C 4 54, 14 44, 24 37 Z" fill="url(#favBlue)" />
+  <circle cx="21" cy="64" r="3.5" fill="#FFFFFF" opacity="0.8"/>
+</svg>
