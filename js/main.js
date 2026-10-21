@@ -32,19 +32,66 @@ function initNavbar() {
     headerWrapper?.classList.add('header-scrolled');
   }
 
-  // Mobile menu toggle
+  // Mobile menu setup with backdrop & drawer close button
   if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener('click', () => {
-      const isOpen = navMenu.classList.toggle('open');
-      mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+    // 1. Ensure backdrop element exists
+    let backdrop = document.querySelector('.nav-backdrop');
+    if (!backdrop) {
+      backdrop = document.createElement('div');
+      backdrop.className = 'nav-backdrop';
+      document.body.appendChild(backdrop);
+    }
+
+    // 2. Ensure drawer header with close button exists inside navMenu
+    if (!navMenu.querySelector('.nav-drawer-header')) {
+      const drawerHeader = document.createElement('div');
+      drawerHeader.className = 'nav-drawer-header';
+      drawerHeader.innerHTML = `
+        <img src="assets/images/logo.svg" alt="Petroganso" height="26">
+        <button type="button" class="nav-drawer-close" id="mobileDrawerClose" aria-label="Cerrar menú">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      `;
+      navMenu.insertBefore(drawerHeader, navMenu.firstChild);
+
+      drawerHeader.querySelector('.nav-drawer-close')?.addEventListener('click', closeMenu);
+    }
+
+    function openMenu() {
+      navMenu.classList.add('open');
+      mobileToggle.classList.add('open');
+      mobileToggle.setAttribute('aria-expanded', 'true');
+      backdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      navMenu.classList.remove('open');
+      mobileToggle.classList.remove('open');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+      backdrop.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (navMenu.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    backdrop.addEventListener('click', closeMenu);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeMenu();
+      }
     });
 
     navMenu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-        document.body.style.overflow = '';
-      });
+      link.addEventListener('click', closeMenu);
     });
   }
 }
